@@ -56,7 +56,10 @@ export default function ProductsCarousel() {
                                     >
                                         Más Info.
                                     </Link>
-                                    <button className="w-8 h-8 bg-red-600 hover:bg-red-700 text-white rounded flex items-center justify-center transition-colors">
+                                    <Link
+                                        href={`/productos/${product.id}`}
+                                        className="w-8 h-8 bg-red-600 hover:bg-red-700 text-white rounded flex items-center justify-center transition-colors"
+                                    >
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             fill="none"
@@ -68,10 +71,10 @@ export default function ProductsCarousel() {
                                             <path
                                                 strokeLinecap="round"
                                                 strokeLinejoin="round"
-                                                d="M12 4.5v15m7.5-7.5h-15"
+                                                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
                                             />
                                         </svg>
-                                    </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
