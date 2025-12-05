@@ -3,37 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-
-const products = [
-    {
-        id: "cupcake",
-        name: "Premezcla para Cupcake",
-        image: "/images/products/cupcake.png",
-        description:
-            "Facilita el proceso de elaboración, basta adicionar líquidos, mezclar, hornear y en unos minutos disfrutar cupcakes de delicioso sabor y olor a vainilla natural.",
-    },
-    {
-        id: "mejorante",
-        name: "Mejorante para todo tipo de pan",
-        image: "/images/products/mejorante.png",
-        description:
-            "Fórmula superconcentrada, con proteínas y vitaminas, ofrece mayor masa hasta un 75% de dosis y tiempo de elaboración, mejor estructura de la miga, dorado de la corteza y aroma del producto final.",
-    },
-    {
-        id: "basedonuts",
-        name: "Base Concentrada para Donuts",
-        image: "/images/products/basedonuts.png",
-        description:
-            "Obtén los mejores resultados de donuts sabrosos y suaves durante varios días.",
-    },
-    {
-        id: "vainilla",
-        name: "Base Concentrada Pastel de Vainilla",
-        image: "/images/products/vainilla.png",
-        description:
-            "Mezcla perfecta para crear pasteles de vainilla con textura suave y sabor excepcional.",
-    },
-];
+import { products } from "../data/products";
 
 export default function ProductsCarousel() {
     const [currentIndex, setCurrentIndex] = useState(0);
