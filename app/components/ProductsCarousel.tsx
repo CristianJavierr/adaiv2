@@ -49,7 +49,7 @@ export default function ProductsCarousel() {
                                 <p className="text-sm text-gray-600 mb-6 min-h-[100px]">
                                     {product.description}
                                 </p>
-                                <div className="flex items-center gap-2">
+                                <div className="flex items-center gap-2 relative z-30">
                                     <Link
                                         href={`/productos/${product.id}`}
                                         className="text-sm font-medium text-gray-900 hover:text-red-600 transition-colors"
@@ -58,7 +58,8 @@ export default function ProductsCarousel() {
                                     </Link>
                                     <Link
                                         href={`/productos/${product.id}`}
-                                        className="w-8 h-8 bg-red-600 hover:bg-red-700 text-white rounded flex items-center justify-center transition-colors"
+                                        className="w-8 h-8 bg-red-600 hover:bg-red-700 text-white rounded flex items-center justify-center transition-colors cursor-pointer"
+                                        style={{ pointerEvents: 'auto' }}
                                     >
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +67,7 @@ export default function ProductsCarousel() {
                                             viewBox="0 0 24 24"
                                             strokeWidth={2}
                                             stroke="currentColor"
-                                            className="w-4 h-4"
+                                            className="w-4 h-4 pointer-events-none"
                                         >
                                             <path
                                                 strokeLinecap="round"
