@@ -30,7 +30,7 @@ export default function ProductosPage() {
                             <Link
                                 key={product.id}
                                 href={`/productos/${product.id}`}
-                                className="group bg-white border border-gray-100 rounded-tr-[40px] rounded-bl-[40px] overflow-hidden shadow-sm hover:shadow-lg transition-shadow"
+                                className="group bg-white border border-gray-100 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow"
                             >
                                 {/* Product Image */}
                                 <div className="bg-gray-50 p-8 flex items-center justify-center aspect-square">

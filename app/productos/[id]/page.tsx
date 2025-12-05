@@ -52,7 +52,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 <section className="max-w-7xl mx-auto px-6 py-16">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                         {/* Product Image */}
-                        <div className="bg-gray-50 rounded-tr-[60px] rounded-bl-[60px] p-12 flex items-center justify-center">
+                        <div className="bg-gray-50 rounded-lg p-12 flex items-center justify-center">
                             <Image
                                 src={product.image}
                                 alt={product.name}
@@ -165,7 +165,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                                 <Link
                                     key={relatedProduct.id}
                                     href={`/productos/${relatedProduct.id}`}
-                                    className="group bg-white border border-gray-100 rounded-tr-[40px] rounded-bl-[40px] overflow-hidden shadow-sm hover:shadow-lg transition-shadow"
+                                    className="group bg-white border border-gray-100 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow"
                                 >
                                     <div className="bg-gray-50 p-8 flex items-center justify-center aspect-square">
                                         <Image
