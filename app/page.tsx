@@ -305,16 +305,22 @@ export default function Home() {
             <InstagramEmbed
               posts={[
                 {
-                  imageUrl: "/images/instagram/post1.jpg",
+                  imageUrl: "/images/instagram/Frame 1 (1).png",
                   postUrl: "https://www.instagram.com/adaisoluciones/",
+                  likes: 245,
+                  caption: "Productos de la mejor calidad para tu panadería 🥖✨",
                 },
                 {
-                  imageUrl: "/images/instagram/post2.jpg",
+                  imageUrl: "/images/instagram/Frame 2.png",
                   postUrl: "https://www.instagram.com/adaisoluciones/",
+                  likes: 189,
+                  caption: "Ingredientes que marcan la diferencia 🍞💪",
                 },
                 {
-                  imageUrl: "/images/instagram/post3.jpg",
+                  imageUrl: "/images/hero5.jpg",
                   postUrl: "https://www.instagram.com/adaisoluciones/",
+                  likes: 312,
+                  caption: "Deliciosos resultados con Adai Soluciones 🍩❤️",
                 },
               ]}
             />
