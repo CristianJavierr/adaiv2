@@ -79,8 +79,17 @@ export default function GaleriaPage() {
             <Navbar />
             <main className="min-h-screen bg-white">
                 {/* Hero Section */}
-                <section className="bg-gray-50 py-16">
-                    <div className="max-w-7xl mx-auto px-6 text-center animate-fade-in-up">
+                <section
+                    className="py-16 relative"
+                    style={{
+                        backgroundImage: 'url(/images/bkimage2.png)',
+                        backgroundRepeat: 'repeat',
+                        backgroundSize: '400px',
+                    }}
+                >
+                    {/* Overlay for better text readability */}
+                    <div className="absolute inset-0 bg-white/80"></div>
+                    <div className="max-w-7xl mx-auto px-6 text-center animate-fade-in-up relative z-10">
                         <p className="text-sm text-gray-500 mb-2">Explora Nuestro Trabajo</p>
                         <h1 className="text-4xl md:text-5xl font-serif text-gray-900 mb-4">
                             Galería
@@ -100,8 +109,8 @@ export default function GaleriaPage() {
                                 key={category}
                                 onClick={() => setSelectedCategory(category)}
                                 className={`px-6 py-2 rounded-tr-[20px] rounded-bl-[20px] text-sm font-medium transition-all ${selectedCategory === category
-                                        ? "bg-red-600 text-white"
-                                        : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                                    ? "bg-red-600 text-white"
+                                    : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                                     }`}
                             >
                                 {category}

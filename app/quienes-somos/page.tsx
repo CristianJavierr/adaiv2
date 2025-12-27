@@ -9,8 +9,17 @@ export default function QuienesSomos() {
             <Navbar />
             <main className="min-h-screen bg-white">
                 {/* Hero Section */}
-                <section className="max-w-7xl mx-auto px-6 py-16">
-                    <div className="text-center mb-12 animate-fade-in-up">
+                <section
+                    className="py-16 relative"
+                    style={{
+                        backgroundImage: 'url(/images/bkimage2.png)',
+                        backgroundRepeat: 'repeat',
+                        backgroundSize: '400px',
+                    }}
+                >
+                    {/* Overlay for better text readability */}
+                    <div className="absolute inset-0 bg-white/80"></div>
+                    <div className="max-w-7xl mx-auto px-6 text-center mb-12 animate-fade-in-up relative z-10">
                         <p className="text-sm text-gray-500 mb-2">Nuestra Historia</p>
                         <h1 className="text-4xl md:text-5xl font-serif text-gray-900 mb-4">
                             Quiénes Somos

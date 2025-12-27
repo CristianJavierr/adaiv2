@@ -7,17 +7,19 @@ import { products } from "../data/products";
 
 export default function ProductsCarousel() {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const itemsPerView = 3; // Productos visibles a la vez
+    const maxIndex = Math.max(0, products.length - itemsPerView); // Índice máximo para evitar espacios vacíos
 
     const goToSlide = (index: number) => {
-        setCurrentIndex(index);
+        setCurrentIndex(Math.min(index, maxIndex));
     };
 
     const nextSlide = () => {
-        setCurrentIndex((prev) => (prev + 1) % products.length);
+        setCurrentIndex((prev) => Math.min(prev + 1, maxIndex));
     };
 
     const prevSlide = () => {
-        setCurrentIndex((prev) => (prev - 1 + products.length) % products.length);
+        setCurrentIndex((prev) => Math.max(prev - 1, 0));
     };
 
     return (
@@ -26,24 +28,24 @@ export default function ProductsCarousel() {
             <div className="overflow-hidden">
                 <div
                     className="flex transition-transform duration-500 ease-in-out"
-                    style={{ transform: `translateX(-${currentIndex * (100 / 3)}%)` }}
+                    style={{ transform: `translateX(-${currentIndex * (100 / itemsPerView)}%)` }}
                 >
                     {products.map((product) => (
                         <div
                             key={product.id}
                             className="w-full md:w-1/3 flex-shrink-0 px-4"
                         >
-                            <div className="flex flex-col items-center text-center">
-                                <div className="mb-6 w-full aspect-square flex items-center justify-center max-w-[250px] mx-auto">
+                            <div className="group flex flex-col items-center text-center p-6 rounded-xl transition-all duration-300 hover:bg-gray-50 hover:shadow-lg cursor-pointer">
+                                <div className="mb-6 w-full aspect-square flex items-center justify-center max-w-[250px] mx-auto overflow-hidden">
                                     <Image
                                         src={product.image}
                                         alt={product.name}
                                         width={250}
                                         height={250}
-                                        className="object-contain"
+                                        className="object-contain transition-transform duration-300 group-hover:scale-110"
                                     />
                                 </div>
-                                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                                <h3 className="text-lg font-semibold text-gray-900 mb-3 transition-colors duration-300 group-hover:text-red-600">
                                     {product.name}
                                 </h3>
                                 <p className="text-sm text-gray-600 mb-6 min-h-[100px]">
@@ -58,7 +60,7 @@ export default function ProductsCarousel() {
                                     </Link>
                                     <Link
                                         href={`/productos/${product.id}`}
-                                        className="w-8 h-8 bg-red-600 hover:bg-red-700 text-white rounded flex items-center justify-center transition-colors cursor-pointer"
+                                        className="w-8 h-8 bg-red-600 hover:bg-red-700 text-white rounded flex items-center justify-center transition-all duration-300 cursor-pointer hover:scale-110"
                                         style={{ pointerEvents: 'auto' }}
                                     >
                                         <svg
@@ -127,7 +129,7 @@ export default function ProductsCarousel() {
 
             {/* Dots Navigation */}
             <div className="flex justify-center gap-2 mt-8">
-                {products.map((_, index) => (
+                {Array.from({ length: maxIndex + 1 }).map((_, index) => (
                     <button
                         key={index}
                         onClick={() => goToSlide(index)}
@@ -135,7 +137,7 @@ export default function ProductsCarousel() {
                             ? "bg-gray-900 w-8"
                             : "bg-gray-300 hover:bg-gray-400"
                             }`}
-                        aria-label={`Go to product ${index + 1}`}
+                        aria-label={`Go to slide ${index + 1}`}
                     />
                 ))}
             </div>
