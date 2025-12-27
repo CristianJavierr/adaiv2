@@ -10,7 +10,7 @@ export default function QuienesSomos() {
             <main className="min-h-screen bg-white">
                 {/* Hero Section */}
                 <section className="max-w-7xl mx-auto px-6 py-16">
-                    <div className="text-center mb-12">
+                    <div className="text-center mb-12 animate-fade-in-up">
                         <p className="text-sm text-gray-500 mb-2">Nuestra Historia</p>
                         <h1 className="text-4xl md:text-5xl font-serif text-gray-900 mb-4">
                             Quiénes Somos
@@ -25,8 +25,8 @@ export default function QuienesSomos() {
                 <section className="max-w-7xl mx-auto px-6 py-16">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         {/* Left Column - Image */}
-                        <div className="relative">
-                            <div className="relative rounded-tr-[100px] rounded-bl-[100px] overflow-hidden aspect-[4/3]">
+                        <div className="relative animate-slide-in-left">
+                            <div className="relative rounded-tr-[100px] rounded-bl-[100px] overflow-hidden aspect-[4/3] image-zoom">
                                 <Image
                                     src="/images/aboutus.jpeg"
                                     alt="Equipo Adai Soluciones"
@@ -37,7 +37,7 @@ export default function QuienesSomos() {
                         </div>
 
                         {/* Right Column - Text Content */}
-                        <div className="space-y-6">
+                        <div className="space-y-6 animate-slide-in-right">
                             <h2 className="text-3xl md:text-4xl font-serif text-gray-900 mb-4">
                                 La Historia detrás de Adai Soluciones
                             </h2>
@@ -69,7 +69,7 @@ export default function QuienesSomos() {
 
                 {/* Company Info */}
                 <section className="max-w-7xl mx-auto px-6 py-8">
-                    <div className="bg-red-50 rounded-tr-[60px] rounded-bl-[60px] p-8 md:p-12 text-center">
+                    <div className="bg-red-50 rounded-tr-[60px] rounded-bl-[60px] p-8 md:p-12 text-center animate-fade-in-scale">
                         <p className="text-gray-700 leading-relaxed max-w-3xl mx-auto">
                             <strong>Adai Soluciones, S.R.L.</strong> fue creada el 2 de enero de 2017 como una
                             empresa familiar, dedicada a ofrecer soluciones a las industrias de alimentos y bebidas,
@@ -83,7 +83,7 @@ export default function QuienesSomos() {
                 <section className="max-w-7xl mx-auto px-6 py-16">
                     <div className="border-t border-gray-200 mb-16"></div>
 
-                    <div className="text-center mb-12">
+                    <div className="text-center mb-12 animate-fade-in-up">
                         <p className="text-sm text-gray-500 mb-2">Nuestro Propósito</p>
                         <h2 className="text-3xl md:text-4xl font-serif text-gray-900">
                             Misión, Visión y Política de Calidad
@@ -92,7 +92,7 @@ export default function QuienesSomos() {
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {/* Mission */}
-                        <div className="bg-white border border-gray-100 p-8 rounded-tr-[40px] rounded-bl-[40px] shadow-sm hover:shadow-md transition-shadow">
+                        <div className="bg-white border border-gray-100 p-8 rounded-tr-[40px] rounded-bl-[40px] shadow-sm hover-lift animate-fade-in-up delay-100">
                             <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6 mx-auto">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -119,7 +119,7 @@ export default function QuienesSomos() {
                         </div>
 
                         {/* Vision */}
-                        <div className="bg-white border border-gray-100 p-8 rounded-tr-[40px] rounded-bl-[40px] shadow-sm hover:shadow-md transition-shadow">
+                        <div className="bg-white border border-gray-100 p-8 rounded-tr-[40px] rounded-bl-[40px] shadow-sm hover-lift animate-fade-in-up delay-200">
                             <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6 mx-auto">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -150,7 +150,7 @@ export default function QuienesSomos() {
                         </div>
 
                         {/* Quality Policy */}
-                        <div className="bg-white border border-gray-100 p-8 rounded-tr-[40px] rounded-bl-[40px] shadow-sm hover:shadow-md transition-shadow">
+                        <div className="bg-white border border-gray-100 p-8 rounded-tr-[40px] rounded-bl-[40px] shadow-sm hover-lift animate-fade-in-up delay-300">
                             <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6 mx-auto">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -180,7 +180,7 @@ export default function QuienesSomos() {
                 <section className="max-w-7xl mx-auto px-6 py-16">
                     <div className="border-t border-gray-200 mb-16"></div>
 
-                    <div className="text-center mb-12">
+                    <div className="text-center mb-12 animate-fade-in-up">
                         <p className="text-sm text-gray-500 mb-2">Lo Que Nos Define</p>
                         <h2 className="text-3xl md:text-4xl font-serif text-gray-900">
                             Nuestros Valores
@@ -189,8 +189,8 @@ export default function QuienesSomos() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {/* Apertura */}
-                        <div className="text-center p-6">
-                            <div className="w-20 h-20 bg-red-600 rounded-tr-[30px] rounded-bl-[30px] flex items-center justify-center mb-6 mx-auto">
+                        <div className="text-center p-6 animate-fade-in-up delay-100">
+                            <div className="w-20 h-20 bg-red-600 rounded-tr-[30px] rounded-bl-[30px] flex items-center justify-center mb-6 mx-auto hover-lift">
                                 <span className="text-3xl font-bold text-white">A</span>
                             </div>
                             <h3 className="text-lg font-semibold text-gray-900 mb-3">Apertura</h3>
@@ -200,8 +200,8 @@ export default function QuienesSomos() {
                         </div>
 
                         {/* Disciplina */}
-                        <div className="text-center p-6">
-                            <div className="w-20 h-20 bg-red-600 rounded-tr-[30px] rounded-bl-[30px] flex items-center justify-center mb-6 mx-auto">
+                        <div className="text-center p-6 animate-fade-in-up delay-200">
+                            <div className="w-20 h-20 bg-red-600 rounded-tr-[30px] rounded-bl-[30px] flex items-center justify-center mb-6 mx-auto hover-lift">
                                 <span className="text-3xl font-bold text-white">D</span>
                             </div>
                             <h3 className="text-lg font-semibold text-gray-900 mb-3">Disciplina</h3>
@@ -211,8 +211,8 @@ export default function QuienesSomos() {
                         </div>
 
                         {/* Agilidad */}
-                        <div className="text-center p-6">
-                            <div className="w-20 h-20 bg-red-600 rounded-tr-[30px] rounded-bl-[30px] flex items-center justify-center mb-6 mx-auto">
+                        <div className="text-center p-6 animate-fade-in-up delay-300">
+                            <div className="w-20 h-20 bg-red-600 rounded-tr-[30px] rounded-bl-[30px] flex items-center justify-center mb-6 mx-auto hover-lift">
                                 <span className="text-3xl font-bold text-white">A</span>
                             </div>
                             <h3 className="text-lg font-semibold text-gray-900 mb-3">Agilidad</h3>
@@ -222,8 +222,8 @@ export default function QuienesSomos() {
                         </div>
 
                         {/* Integridad */}
-                        <div className="text-center p-6">
-                            <div className="w-20 h-20 bg-red-600 rounded-tr-[30px] rounded-bl-[30px] flex items-center justify-center mb-6 mx-auto">
+                        <div className="text-center p-6 animate-fade-in-up delay-400">
+                            <div className="w-20 h-20 bg-red-600 rounded-tr-[30px] rounded-bl-[30px] flex items-center justify-center mb-6 mx-auto hover-lift">
                                 <span className="text-3xl font-bold text-white">I</span>
                             </div>
                             <h3 className="text-lg font-semibold text-gray-900 mb-3">Integridad</h3>
@@ -234,7 +234,7 @@ export default function QuienesSomos() {
                     </div>
 
                     {/* ADAI Meaning */}
-                    <div className="text-center mt-12">
+                    <div className="text-center mt-12 animate-fade-in-up delay-500">
                         <p className="text-lg text-gray-700 italic">
                             <strong>A</strong>pertura + <strong>D</strong>isciplina + <strong>A</strong>gilidad + <strong>I</strong>ntegridad = <strong className="text-red-600">ADAI</strong>
                         </p>
@@ -245,7 +245,7 @@ export default function QuienesSomos() {
                 <section className="max-w-7xl mx-auto px-6 py-16">
                     <div className="border-t border-gray-200 mb-16"></div>
 
-                    <div className="bg-gray-900 rounded-tr-[60px] rounded-bl-[60px] p-12 text-center">
+                    <div className="bg-gray-900 rounded-tr-[60px] rounded-bl-[60px] p-12 text-center animate-fade-in-scale">
                         <h2 className="text-2xl md:text-3xl font-serif text-white mb-4">
                             ¿Quieres saber más sobre Adai Soluciones?
                         </h2>
@@ -254,7 +254,7 @@ export default function QuienesSomos() {
                         </p>
                         <Link
                             href="/contacto"
-                            className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-4 rounded-tr-[30px] rounded-bl-[30px] border-2 border-red-600 hover:border-red-700 transition-colors uppercase tracking-wide"
+                            className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-4 rounded-tr-[30px] rounded-bl-[30px] border-2 border-red-600 hover:border-red-700 transition-colors uppercase tracking-wide btn-animate"
                             style={{ fontSize: '13px' }}
                         >
                             CONTÁCTANOS

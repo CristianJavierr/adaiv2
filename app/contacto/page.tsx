@@ -12,7 +12,7 @@ export default function Contacto() {
             <main className="min-h-screen bg-white">
                 {/* Hero Section */}
                 <section className="max-w-7xl mx-auto px-6 py-16">
-                    <div className="text-center mb-12">
+                    <div className="text-center mb-12 animate-fade-in-up">
                         <p className="text-sm text-gray-500 mb-2">Estamos para ayudarte</p>
                         <h1 className="text-4xl md:text-5xl font-serif text-gray-900 mb-4">
                             Contáctanos
@@ -27,7 +27,7 @@ export default function Contacto() {
                 <section className="max-w-7xl mx-auto px-6 py-8">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                         {/* Left Column - Contact Info */}
-                        <div className="space-y-8">
+                        <div className="space-y-8 animate-slide-in-left">
                             {/* Info Cards */}
                             <div className="bg-gray-50 rounded-tr-[40px] rounded-bl-[40px] p-8">
                                 <h2 className="text-2xl font-serif text-gray-900 mb-6">
@@ -156,7 +156,7 @@ export default function Contacto() {
                                     href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold px-8 py-4 rounded-tr-[30px] rounded-bl-[30px] transition-colors uppercase tracking-wide"
+                                    className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold px-8 py-4 rounded-tr-[30px] rounded-bl-[30px] transition-colors uppercase tracking-wide btn-animate"
                                     style={{ fontSize: '13px' }}
                                 >
                                     AGENDAR POR WHATSAPP
@@ -168,7 +168,7 @@ export default function Contacto() {
                         </div>
 
                         {/* Right Column - Contact Form */}
-                        <div className="bg-white border border-gray-100 rounded-tr-[60px] rounded-bl-[60px] p-8 md:p-12 shadow-sm">
+                        <div className="bg-white border border-gray-100 rounded-tr-[60px] rounded-bl-[60px] p-8 md:p-12 shadow-sm animate-slide-in-right">
                             <h2 className="text-2xl font-serif text-gray-900 mb-2">
                                 Agenda tu Cita
                             </h2>
@@ -187,7 +187,7 @@ export default function Contacto() {
                                         id="name"
                                         name="name"
                                         required
-                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition-colors"
+                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all"
                                         placeholder="Tu nombre"
                                     />
                                 </div>
@@ -202,7 +202,7 @@ export default function Contacto() {
                                         id="email"
                                         name="email"
                                         required
-                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition-colors"
+                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all"
                                         placeholder="correo@ejemplo.com"
                                     />
                                 </div>
@@ -217,7 +217,7 @@ export default function Contacto() {
                                         id="phone"
                                         name="phone"
                                         required
-                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition-colors"
+                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all"
                                         placeholder="+1 809-000-0000"
                                     />
                                 </div>
@@ -230,7 +230,7 @@ export default function Contacto() {
                                     <select
                                         id="service"
                                         name="service"
-                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition-colors"
+                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all"
                                     >
                                         <option value="">Selecciona un servicio</option>
                                         <option value="productos">Consulta sobre Productos</option>
@@ -250,7 +250,7 @@ export default function Contacto() {
                                         type="date"
                                         id="date"
                                         name="date"
-                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition-colors"
+                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all"
                                     />
                                 </div>
 
@@ -263,7 +263,7 @@ export default function Contacto() {
                                         id="message"
                                         name="message"
                                         rows={4}
-                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition-colors resize-none"
+                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all resize-none"
                                         placeholder="Cuéntanos más sobre lo que necesitas..."
                                     />
                                 </div>
@@ -271,7 +271,7 @@ export default function Contacto() {
                                 {/* Submit Button */}
                                 <button
                                     type="submit"
-                                    className="w-full inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-4 rounded-tr-[30px] rounded-bl-[30px] border-2 border-red-600 hover:border-red-700 transition-colors uppercase tracking-wide"
+                                    className="w-full inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-4 rounded-tr-[30px] rounded-bl-[30px] border-2 border-red-600 hover:border-red-700 transition-colors uppercase tracking-wide btn-animate"
                                     style={{ fontSize: '13px' }}
                                 >
                                     ENVIAR SOLICITUD
@@ -299,14 +299,14 @@ export default function Contacto() {
                 <section className="max-w-7xl mx-auto px-6 py-16">
                     <div className="border-t border-gray-200 mb-16"></div>
 
-                    <div className="text-center mb-12">
+                    <div className="text-center mb-12 animate-fade-in-up">
                         <p className="text-sm text-gray-500 mb-2">Ubicación</p>
                         <h2 className="text-3xl md:text-4xl font-serif text-gray-900">
                             Visítanos
                         </h2>
                     </div>
 
-                    <div className="w-full flex justify-center">
+                    <div className="w-full flex justify-center animate-fade-in-scale">
                         <div className="w-full max-w-4xl rounded-tr-[40px] rounded-bl-[40px] overflow-hidden shadow-lg">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.395936027385!2d-70.7068515!3d19.438488900000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eb1cfd097b75d19%3A0x9cf57a1013760d05!2sAdai%20Soluciones%2C%20SRL.!5e0!3m2!1ses-419!2sdo!4v1764968987895!5m2!1ses-419!2sdo"

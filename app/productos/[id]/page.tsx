@@ -33,13 +33,13 @@ export default async function ProductPage({ params }: ProductPageProps) {
             <main className="min-h-screen bg-white">
                 {/* Breadcrumb */}
                 <div className="bg-gray-50 py-4">
-                    <div className="max-w-7xl mx-auto px-6">
+                    <div className="max-w-7xl mx-auto px-6 animate-fade-in">
                         <nav className="flex items-center gap-2 text-sm text-gray-500">
-                            <Link href="/" className="hover:text-gray-900 transition-colors">
+                            <Link href="/" className="hover:text-gray-900 transition-colors link-underline">
                                 Inicio
                             </Link>
                             <span>/</span>
-                            <Link href="/productos" className="hover:text-gray-900 transition-colors">
+                            <Link href="/productos" className="hover:text-gray-900 transition-colors link-underline">
                                 Productos
                             </Link>
                             <span>/</span>
@@ -52,7 +52,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 <section className="max-w-7xl mx-auto px-6 py-16">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                         {/* Product Image */}
-                        <div className="bg-gray-50 rounded-lg p-12 flex items-center justify-center">
+                        <div className="bg-gray-50 rounded-lg p-12 flex items-center justify-center animate-fade-in-scale">
                             <Image
                                 src={product.image}
                                 alt={product.name}
@@ -63,7 +63,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                         </div>
 
                         {/* Product Info */}
-                        <div>
+                        <div className="animate-slide-in-right">
                             <h1 className="text-3xl md:text-4xl font-serif text-gray-900 mb-4">
                                 {product.name}
                             </h1>
@@ -78,7 +78,11 @@ export default async function ProductPage({ params }: ProductPageProps) {
                                 </h2>
                                 <ul className="space-y-2">
                                     {product.features.map((feature, index) => (
-                                        <li key={index} className="flex items-start gap-3">
+                                        <li
+                                            key={index}
+                                            className="flex items-start gap-3 animate-fade-in-up"
+                                            style={{ animationDelay: `${index * 0.1}s`, opacity: 0 }}
+                                        >
                                             <svg
                                                 className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5"
                                                 fill="none"
@@ -118,7 +122,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                             <div className="flex flex-wrap gap-4">
                                 <Link
                                     href="/contacto"
-                                    className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-4 rounded-tr-[30px] rounded-bl-[30px] transition-colors uppercase tracking-wide"
+                                    className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-4 rounded-tr-[30px] rounded-bl-[30px] transition-colors uppercase tracking-wide btn-animate"
                                     style={{ fontSize: '13px' }}
                                 >
                                     Solicitar Información
@@ -141,7 +145,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                                     href="https://wa.me/18090000000"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-4 rounded-tr-[30px] rounded-bl-[30px] transition-colors uppercase tracking-wide"
+                                    className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-4 rounded-tr-[30px] rounded-bl-[30px] transition-colors uppercase tracking-wide btn-animate"
                                     style={{ fontSize: '13px' }}
                                 >
                                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -157,17 +161,18 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 {/* Related Products */}
                 <section className="bg-gray-50 py-16">
                     <div className="max-w-7xl mx-auto px-6">
-                        <h2 className="text-2xl md:text-3xl font-serif text-gray-900 mb-8 text-center">
+                        <h2 className="text-2xl md:text-3xl font-serif text-gray-900 mb-8 text-center animate-fade-in-up">
                             Productos Relacionados
                         </h2>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                            {relatedProducts.map((relatedProduct) => (
+                            {relatedProducts.map((relatedProduct, index) => (
                                 <Link
                                     key={relatedProduct.id}
                                     href={`/productos/${relatedProduct.id}`}
-                                    className="group bg-white border border-gray-100 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow"
+                                    className="group bg-white border border-gray-100 rounded-lg overflow-hidden shadow-sm hover-lift animate-fade-in-up"
+                                    style={{ animationDelay: `${index * 0.1}s`, opacity: 0 }}
                                 >
-                                    <div className="bg-gray-50 p-8 flex items-center justify-center aspect-square">
+                                    <div className="bg-gray-50 p-8 flex items-center justify-center aspect-square image-zoom">
                                         <Image
                                             src={relatedProduct.image}
                                             alt={relatedProduct.name}

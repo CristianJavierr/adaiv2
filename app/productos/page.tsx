@@ -11,7 +11,7 @@ export default function ProductosPage() {
             <main className="min-h-screen bg-white">
                 {/* Hero Section */}
                 <section className="bg-gray-50 py-16">
-                    <div className="max-w-7xl mx-auto px-6 text-center">
+                    <div className="max-w-7xl mx-auto px-6 text-center animate-fade-in-up">
                         <p className="text-sm text-gray-500 mb-2">Catálogo</p>
                         <h1 className="text-4xl md:text-5xl font-serif text-gray-900 mb-4">
                             Nuestros Productos
@@ -26,14 +26,15 @@ export default function ProductosPage() {
                 {/* Products Grid */}
                 <section className="max-w-7xl mx-auto px-6 py-16">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {products.map((product) => (
+                        {products.map((product, index) => (
                             <Link
                                 key={product.id}
                                 href={`/productos/${product.id}`}
-                                className="group bg-white border border-gray-100 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow"
+                                className={`group bg-white border border-gray-100 rounded-lg overflow-hidden shadow-sm hover-lift animate-fade-in-up`}
+                                style={{ animationDelay: `${index * 0.1}s`, opacity: 0 }}
                             >
                                 {/* Product Image */}
-                                <div className="bg-gray-50 p-8 flex items-center justify-center aspect-square">
+                                <div className="bg-gray-50 p-8 flex items-center justify-center aspect-square image-zoom">
                                     <Image
                                         src={product.image}
                                         alt={product.name}
@@ -76,7 +77,7 @@ export default function ProductosPage() {
 
                 {/* CTA Section */}
                 <section className="bg-gray-50 py-16">
-                    <div className="max-w-7xl mx-auto px-6 text-center">
+                    <div className="max-w-7xl mx-auto px-6 text-center animate-fade-in-up">
                         <h2 className="text-2xl md:text-3xl font-serif text-gray-900 mb-4">
                             ¿Necesitas más información?
                         </h2>
@@ -85,7 +86,7 @@ export default function ProductosPage() {
                         </p>
                         <Link
                             href="/contacto"
-                            className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-4 rounded-tr-[30px] rounded-bl-[30px] transition-colors uppercase tracking-wide"
+                            className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-4 rounded-tr-[30px] rounded-bl-[30px] transition-colors uppercase tracking-wide btn-animate"
                             style={{ fontSize: '13px' }}
                         >
                             Contáctanos
