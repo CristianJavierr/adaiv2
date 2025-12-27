@@ -26,6 +26,12 @@ export default function Navbar() {
                     {/* Desktop Navigation Links */}
                     <div className="hidden md:flex items-center gap-8">
                         <Link
+                            href="/"
+                            className="text-gray-700 hover:text-gray-900 transition-colors text-sm font-medium"
+                        >
+                            Home
+                        </Link>
+                        <Link
                             href="/productos"
                             className="text-gray-700 hover:text-gray-900 transition-colors text-sm font-medium"
                         >
@@ -119,6 +125,13 @@ export default function Navbar() {
                 {isMenuOpen && (
                     <div className="md:hidden mt-4 pb-4 border-t border-gray-100 pt-4">
                         <div className="flex flex-col gap-4">
+                            <Link
+                                href="/"
+                                className="text-gray-700 hover:text-gray-900 transition-colors text-sm font-medium"
+                                onClick={() => setIsMenuOpen(false)}
+                            >
+                                Home
+                            </Link>
                             <Link
                                 href="/productos"
                                 className="text-gray-700 hover:text-gray-900 transition-colors text-sm font-medium"
