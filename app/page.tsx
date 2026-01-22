@@ -154,7 +154,7 @@ export default function Home() {
             <ScrollAnimation animation="fade-up" delay={0}>
               <div className="text-center md:border-r border-gray-400">
                 <h3 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-2 stat-number">
-                  <CountUp end={15} suffix="+" duration={2000} />
+                  <CountUp end={9} suffix="+" duration={2000} />
                 </h3>
                 <p className="text-xs md:text-sm text-gray-700">
                   Años de
@@ -207,7 +207,7 @@ export default function Home() {
             <div className="text-center mb-12">
               <p className="text-sm text-gray-500 mb-2">Nuestros Productos</p>
               <h2 className="text-3xl md:text-4xl font-serif text-gray-900">
-                Hecho con Materiales de la Mejor Calidad
+                Ingredientes de Calidad a Precio Competitivo
               </h2>
             </div>
           </ScrollAnimation>
@@ -241,9 +241,7 @@ export default function Home() {
                 <p className="text-gray-700 leading-relaxed">
                   En Adai Soluciones SRL ofrecemos soluciones e ingredientes de alta calidad para panaderías, reposterías y negocios alimentarios, combinando insumos confiables con asesoría estratégica para mejorar procesos y impulsar el crecimiento. Nuestro enfoque está en brindar herramientas prácticas y eficientes que permitan producir con mayor consistencia y competitividad.
                 </p>
-                <p className="text-gray-700 leading-relaxed">
-                  Además, complementamos nuestros productos con consultoría empresarial orientada a la eficiencia y desarrollo comercial, ayudando a identificar oportunidades, optimizar operaciones y fortalecer la marca de cada cliente. En Adai Soluciones SRL trabajamos para que tu negocio produzca mejor, venda más y crezca con una base sólida.
-                </p>
+
 
                 <Link
                   href="/quienes-somos"

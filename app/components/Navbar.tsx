@@ -29,7 +29,7 @@ export default function Navbar() {
                             href="/"
                             className="text-gray-700 hover:text-gray-900 transition-colors text-sm font-medium"
                         >
-                            Home
+                            Inicio
                         </Link>
                         <Link
                             href="/productos"
@@ -130,7 +130,7 @@ export default function Navbar() {
                                 className="text-gray-700 hover:text-gray-900 transition-colors text-sm font-medium"
                                 onClick={() => setIsMenuOpen(false)}
                             >
-                                Home
+                                Inicio
                             </Link>
                             <Link
                                 href="/productos"

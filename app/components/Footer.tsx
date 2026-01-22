@@ -24,7 +24,7 @@ export default function Footer() {
                         </p>
                         <div className="text-sm text-gray-400 space-y-1">
                             <p>info@adaisoluciones.com</p>
-                            <p>Teléfono: +1 809-000-0000</p>
+                            <p>Teléfono: +1 809-247-9182</p>
                         </div>
                     </div>
 
@@ -110,7 +110,7 @@ export default function Footer() {
                             </a>
                             {/* WhatsApp */}
                             <a
-                                href="https://wa.me/18090000000"
+                                href="https://wa.me/18092479182"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="w-10 h-10 bg-gray-700 hover:bg-gray-600 rounded-full flex items-center justify-center transition-colors"

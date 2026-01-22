@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 import Link from "next/link";
 
 export default function Contacto() {
-    const whatsappNumber = "18090000000";
+    const whatsappNumber = "18092479182";
     const whatsappMessage = encodeURIComponent("Hola, me gustaría agendar una cita con Adai Soluciones.");
 
     return (
@@ -64,7 +64,7 @@ export default function Contacto() {
                                         </div>
                                         <div>
                                             <h3 className="font-semibold text-gray-900">Teléfono</h3>
-                                            <p className="text-gray-600">+1 809-000-0000</p>
+                                            <p className="text-gray-600">+1 809-247-9182</p>
                                         </div>
                                     </div>
 

@@ -133,7 +133,7 @@ export default function PromoPopup() {
                     </div>
 
                     <p className="text-gray-600 text-sm mb-6">
-                        Contáctanos ahora y recibe asesoría <strong>gratuita</strong> + descuento especial en productos para tu panadería o repostería.
+                        Contáctanos ahora y recibe asesoría <strong>libre de costo</strong> + descuento especial en productos para tu panadería o repostería.
                     </p>
 
                     {/* CTA Buttons */}
