@@ -23,25 +23,25 @@ export const products: Product[] = [
             "Resultados consistentes",
             "Reduce tiempo de elaboración"
         ],
-        usage: "Mezclar con agua y huevos según indicaciones, batir por 3-5 minutos y hornear a 180°C por 18-22 minutos.",
-        presentation: "Bolsa de 5 kg y 25 kg"
+        usage: "Mezclar con líquidos (huevos, aceite y agua) batir por 3-5 minutos y hornear a 180°C por 18-22 minutos.",
+        presentation: "Bolsa de 5 lb (2.27 kg) y de 50 lb (22.73 kg)"
     },
     {
         id: "mejorante",
         name: "Mejorante para todo tipo de pan",
         image: "/images/products/mejorante.png",
-        description: "Fórmula superconcentrada, con proteínas y vitaminas, ofrece mayor masa hasta un 75% de dosis y tiempo de elaboración, mejor estructura de la miga, dorado de la corteza y aroma del producto final.",
-        longDescription: "Nuestro mejorante profesional está formulado con tecnología avanzada para optimizar cada aspecto de tu producción de pan. Su fórmula superconcentrada con proteínas y vitaminas garantiza un mayor rendimiento de masa, mejor estructura y un dorado perfecto en cada horneada.",
+        description: "Fórmula superconcentrada, con proteínas y vitaminas, ofrece optimizar la dosificación y los tiempos de proceso, mejor estructura de la miga, dorado de la corteza y aroma del producto final.",
+        longDescription: "Gracias a su fórmula superconcentrada con proteínas y vitaminas, garantiza ahorro en dosis y tiempo, aporta mejor estructura de la miga, ahorro y dorado perfecto en cada horneada.",
         features: [
             "Fórmula superconcentrada",
             "Enriquecido con proteínas y vitaminas",
-            "Hasta 75% más rendimiento de masa",
+            "Reduce el uso entre 50-75%",
             "Mejor estructura de la miga",
             "Dorado uniforme de la corteza",
             "Aroma excepcional"
         ],
-        usage: "Agregar 0.5% a 1% del peso total de la harina. Mezclar junto con los ingredientes secos antes de amasar.",
-        presentation: "Bolsa de 1 kg, 5 kg y 25 kg"
+        usage: "Agregar 0.25% a 0.50% del peso total de la harina. Mezclar junto con los ingredientes secos antes de amasar.",
+        presentation: "Bolsa de 5 lb (2.27 kg) y de 50 lb (22.73 kg)"
     },
     {
         id: "basedonuts",
@@ -56,15 +56,15 @@ export const products: Product[] = [
             "Absorción óptima de fritura",
             "Resultados profesionales"
         ],
-        usage: "Mezclar con harina, agua, levadura y huevos. Dejar fermentar, formar y freír a 180°C.",
-        presentation: "Bolsa de 5 kg y 25 kg"
+        usage: "Mezclar con harina, margarina, levadura y agua. Mezclar todos los ingredientes hasta lograr la masa. Pasar la masa por cilindro hasta suavizarla. Dejar tapada con tela o plástico, en reposo por 10 minutos. Extender la masa hasta 1 cm de grosor aproximado. Formar las Donuts con troquel o maquinaria. Dejar actuar la levadura hasta tamaño deseado. Freír en aceite vegetal. Escurrir y decorar al gusto.",
+        presentation: "Bolsa de 5 lb (2.27 kg) y de 50 lb (22.73 kg)"
     },
     {
         id: "vainilla",
         name: "Base Concentrada Pastel de Vainilla",
         image: "/images/products/vainilla.png",
-        description: "Mezcla perfecta para crear pasteles de vainilla con textura suave y sabor excepcional.",
-        longDescription: "La Base Concentrada para Pastel de Vainilla de Adai es la opción preferida de reposteros profesionales. Su fórmula exclusiva garantiza pasteles con una miga suave, húmeda y un sabor a vainilla natural que cautiva desde el primer bocado.",
+        description: "Mezcla perfecta para crear pasteles de vainilla con textura esponjosa y sabor excepcional.",
+        longDescription: "La Base Concentrada para Pastel de Vainilla de Adai es la opción preferida de reposteros profesionales. Su fórmula exclusiva garantiza pasteles con una miga esponjosa, húmeda y un sabor a vainilla natural que cautiva desde el primer bocado.",
         features: [
             "Sabor premium a vainilla natural",
             "Miga húmeda y esponjosa",
@@ -72,8 +72,8 @@ export const products: Product[] = [
             "Ideal para decoración",
             "Resultados consistentes"
         ],
-        usage: "Mezclar con huevos, aceite y agua. Batir por 4-5 minutos. Hornear a 170°C por 30-35 minutos.",
-        presentation: "Bolsa de 5 kg y 25 kg"
+        usage: "Mezclar con harina, huevos, azúcar, aceite y agua. Batir por 4-5 minutos. Hornear a 170°C por 30-35 minutos.",
+        presentation: "Bolsa de 5 lb (2.27 kg) y de 50 lb (22.73 kg)"
     },
 ];
 

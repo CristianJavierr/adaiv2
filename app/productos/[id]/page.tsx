@@ -142,7 +142,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                                     </svg>
                                 </Link>
                                 <a
-                                    href="https://wa.me/18090000000"
+                                    href="https://wa.me/18092479182"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-4 rounded-tr-[30px] rounded-bl-[30px] transition-colors uppercase tracking-wide btn-animate"

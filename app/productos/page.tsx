@@ -27,7 +27,6 @@ export default function ProductosPage() {
                         </h1>
                         <p className="text-gray-600 max-w-2xl mx-auto">
                             Ingredientes de alta calidad para panaderías y reposterías.
-                            Descubre nuestra línea completa de productos profesionales.
                         </p>
                     </div>
                 </section>

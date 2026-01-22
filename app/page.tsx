@@ -228,7 +228,7 @@ export default function Home() {
             <div className="text-center mb-12">
               <p className="text-sm text-gray-500 mb-2">Acerca de nosotros</p>
               <h2 className="text-3xl md:text-4xl font-serif text-gray-900 mb-12">
-                Por que elegir adai
+                Por qué elegir Adai
               </h2>
             </div>
           </ScrollAnimation>
@@ -293,7 +293,7 @@ export default function Home() {
             <div className="text-center mb-12">
               <p className="text-sm text-gray-500 mb-2">Instagram</p>
               <h2 className="text-3xl md:text-4xl font-serif text-gray-900 mb-12">
-                Nuestras ultimas publicaciones
+                Nuestras últimas publicaciones
               </h2>
             </div>
           </ScrollAnimation>

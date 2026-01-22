@@ -139,7 +139,7 @@ export default function PromoPopup() {
                     {/* CTA Buttons */}
                     <div className="space-y-3">
                         <a
-                            href="https://wa.me/18090000000?text=Hola,%20vi%20la%20oferta%20en%20su%20sitio%20web%20y%20me%20gustar%C3%ADa%20obtener%20el%20descuento%20del%2010%25"
+                            href="https://wa.me/18092479182?text=Hola,%20vi%20la%20oferta%20en%20su%20sitio%20web%20y%20me%20gustaría%20obtener%20el%20descuento%20del%2010%25"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="w-full inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-tr-[20px] rounded-bl-[20px] transition-all btn-animate"
