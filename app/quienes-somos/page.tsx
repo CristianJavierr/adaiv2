@@ -14,7 +14,7 @@ export default function QuienesSomos() {
                     style={{
                         backgroundImage: 'url(/images/bkimage2.png)',
                         backgroundRepeat: 'repeat',
-                        backgroundSize: '400px',
+                        backgroundSize: '600px',
                     }}
                 >
                     {/* Overlay for better text readability */}
@@ -35,10 +35,10 @@ export default function QuienesSomos() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         {/* Left Column - Image */}
                         <div className="relative animate-slide-in-left">
-                            <div className="relative rounded-tr-[100px] rounded-bl-[100px] overflow-hidden aspect-[4/3] image-zoom">
+                            <div className="relative rounded-tr-[100px] rounded-bl-[100px] overflow-hidden aspect-[3/4] image-zoom">
                                 <Image
-                                    src="/images/aboutus.jpeg"
-                                    alt="Equipo Adai Soluciones"
+                                    src="/images/history.jpeg"
+                                    alt="Historia de Adai Soluciones"
                                     fill
                                     className="object-cover"
                                 />
@@ -51,26 +51,16 @@ export default function QuienesSomos() {
                                 La Historia detrás de Adai Soluciones
                             </h2>
                             <p className="text-gray-700 leading-relaxed">
-                                Durante más de una década, combiné roles como gerente de innovación y calidad,
-                                catedrática, regente farmacéutica, madre de tres y soporte familiar, acumulando
-                                conocimientos y responsabilidades. Los excesos de trabajo me llevaron a un derrame
-                                pleural atípico y una lenta recuperación.
+                                Durante más de una década, combiné roles gerenciales, a nivel laboral, profesional y familiar, acumulando conocimientos y responsabilidades. Como sin darme cuenta, se fue afectando mi salud.
                             </p>
                             <p className="text-gray-700 leading-relaxed">
-                                En una noche de desvelo, un detalle en el ventilador de techo me inspiró a dibujar
-                                nuestro logo. Pensé en mis tres hijos y nuestras iniciales formaron la marca: <strong>Adai</strong>.
-                                Una voz me dijo: &quot;Ante las situaciones, las Soluciones&quot;. Así surgió el nombre
-                                comercial: <strong>Adai Soluciones</strong>.
+                                En una noche de desvelo con pensamientos de inspiración, surge el logo de tulipán, con las iniciales de mis hijos se forma la marca: <strong>Adai</strong> y una voz interior: &quot;Ante las situaciones, las Soluciones&quot;. Así surgió el nombre comercial: <strong>Adai Soluciones</strong>.
                             </p>
                             <p className="text-gray-700 leading-relaxed">
-                                Una decisión de vida y fe: renuncié a tres empleos para cuidar mi salud y a mi familia
-                                con un ritmo distinto. Con el apoyo de siempre, habilitamos el local, desarrollamos
-                                productos y servicios, registramos la empresa, y comenzamos a darla a conocer en las
-                                panaderías de pueblos cercanos.
+                                Una decisión de vida y fe: renuncié a tres empleos para cuidar mi salud y a mi familia con un ritmo distinto. Con el apoyo de siempre, habilitamos el local, desarrollamos productos y servicios, registramos la empresa, y comenzamos a darla a conocer en las panaderías de pueblos cercanos.
                             </p>
                             <p className="text-gray-700 leading-relaxed italic font-medium">
-                                Hoy mantenemos la certeza de que, para quien cree, todo obra para bien y que ante
-                                situaciones extremas deben generarse soluciones duraderas.
+                                Hoy mantenemos la certeza de que, para quien cree, toda obra para bien y que ante situaciones extremas deben generarse soluciones duraderas.
                             </p>
                         </div>
                     </div>

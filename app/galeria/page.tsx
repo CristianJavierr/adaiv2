@@ -84,7 +84,7 @@ export default function GaleriaPage() {
                     style={{
                         backgroundImage: 'url(/images/bkimage2.png)',
                         backgroundRepeat: 'repeat',
-                        backgroundSize: '400px',
+                        backgroundSize: '600px',
                     }}
                 >
                     {/* Overlay for better text readability */}
@@ -96,6 +96,8 @@ export default function GaleriaPage() {
                         </h1>
                         <p className="text-gray-600 max-w-2xl mx-auto">
                             Descubre nuestros productos, creaciones y el equipo detrás de Adai Soluciones.
+                        </p>
+                        <p className="text-gray-600 max-w-2xl mx-auto mt-2">
                             Cada imagen cuenta una historia de calidad y dedicación.
                         </p>
                     </div>

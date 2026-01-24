@@ -16,7 +16,7 @@ export default function Contacto() {
                     style={{
                         backgroundImage: 'url(/images/bkimage2.png)',
                         backgroundRepeat: 'repeat',
-                        backgroundSize: '400px',
+                        backgroundSize: '600px',
                     }}
                 >
                     {/* Overlay for better text readability */}
