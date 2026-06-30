@@ -44,10 +44,16 @@ export default function Navbar() {
                             Galería
                         </Link>
                         <Link
+                            href="/consultoria"
+                            className="text-gray-700 hover:text-gray-900 transition-colors text-sm font-medium"
+                        >
+                            Consultoría
+                        </Link>
+                        <Link
                             href="/quienes-somos"
                             className="text-gray-700 hover:text-gray-900 transition-colors text-sm font-medium"
                         >
-                            Quienes Somos
+                            Quiénes Somos
                         </Link>
                         <Link
                             href="/contacto"
@@ -147,11 +153,18 @@ export default function Navbar() {
                                 Galería
                             </Link>
                             <Link
+                                href="/consultoria"
+                                className="text-gray-700 hover:text-gray-900 transition-colors text-sm font-medium"
+                                onClick={() => setIsMenuOpen(false)}
+                            >
+                                Consultoría
+                            </Link>
+                            <Link
                                 href="/quienes-somos"
                                 className="text-gray-700 hover:text-gray-900 transition-colors text-sm font-medium"
                                 onClick={() => setIsMenuOpen(false)}
                             >
-                                Quienes Somos
+                                Quiénes Somos
                             </Link>
                             <Link
                                 href="/contacto"

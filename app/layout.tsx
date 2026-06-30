@@ -14,7 +14,7 @@ const dancingScript = Dancing_Script({
 
 export const metadata: Metadata = {
   title: "Adai Soluciones",
-  description: "Soluciones innovadoras para tu negocio",
+  description: "Soluciones innovadoras para su empresa",
 };
 
 export default function RootLayout({

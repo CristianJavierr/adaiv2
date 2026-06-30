@@ -1,6 +1,5 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import Link from "next/link";
 
 export default function Contacto() {
     const whatsappNumber = "18092479182";
@@ -22,12 +21,12 @@ export default function Contacto() {
                     {/* Overlay for better text readability */}
                     <div className="absolute inset-0 bg-white/80"></div>
                     <div className="max-w-7xl mx-auto px-6 text-center mb-12 animate-fade-in-up relative z-10">
-                        <p className="text-sm text-gray-500 mb-2">Estamos para ayudarte</p>
+                        <p className="text-sm text-gray-500 mb-2">¿Inquietudes o cita?</p>
                         <h1 className="text-4xl md:text-5xl font-serif text-gray-900 mb-4">
-                            Contáctanos
+                            Contáctenos
                         </h1>
                         <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-                            ¿Tienes alguna pregunta o deseas agendar una cita? Estamos aquí para ayudarte.
+                            Estamos aquí para juntos encontrar soluciones.
                         </p>
                     </div>
                 </section>
@@ -159,7 +158,7 @@ export default function Contacto() {
                                     Agenda por WhatsApp
                                 </h3>
                                 <p className="text-gray-600 mb-6">
-                                    ¿Prefieres agendar tu cita directamente? Escríbenos por WhatsApp y te atenderemos de inmediato.
+                                    Para agendar una cita directamente, escribir por WhatsApp y con gusto le atenderemos.
                                 </p>
                                 <a
                                     href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
@@ -179,10 +178,10 @@ export default function Contacto() {
                         {/* Right Column - Contact Form */}
                         <div className="bg-white border border-gray-100 rounded-tr-[60px] rounded-bl-[60px] p-8 md:p-12 shadow-sm animate-slide-in-right">
                             <h2 className="text-2xl font-serif text-gray-900 mb-2">
-                                Agenda tu Cita
+                                Agendar Cita
                             </h2>
                             <p className="text-gray-600 mb-8">
-                                Completa el formulario y nos pondremos en contacto contigo.
+                                Favor de completar el formulario y estaremos en contacto.
                             </p>
 
                             <form className="space-y-6">
@@ -197,7 +196,7 @@ export default function Contacto() {
                                         name="name"
                                         required
                                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all"
-                                        placeholder="Tu nombre"
+                                        placeholder="Nombre completo"
                                     />
                                 </div>
 
@@ -273,7 +272,7 @@ export default function Contacto() {
                                         name="message"
                                         rows={4}
                                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all resize-none"
-                                        placeholder="Cuéntanos más sobre lo que necesitas..."
+                                        placeholder="Indicar el servicio o información requerida..."
                                     />
                                 </div>
 

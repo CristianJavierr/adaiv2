@@ -27,8 +27,7 @@ export default function Home() {
               playsInline
               className="absolute inset-0 w-full h-full object-cover"
             >
-              <source src="/images/videos/vecteezy_fresh-raw-dough-for-bread-or-pizza_48020125.mov" type="video/quicktime" />
-              <source src="/images/videos/vecteezy_fresh-raw-dough-for-bread-or-pizza_48020125.mov" type="video/mp4" />
+              <source src="/images/videos/vecteezy_close-up-of-chefs-hand-in-white-cook-uniforms-and-aprons_6551017.mp4" type="video/mp4" />
             </video>
             {/* Dark Overlay for text readability */}
             <div className="absolute inset-0 bg-black/50"></div>
@@ -39,10 +38,10 @@ export default function Home() {
             <ScrollAnimation animation="fade-up" duration={0.7}>
               <div className="text-center">
                 <h1 className="text-5xl md:text-6xl text-white mb-2 italic drop-shadow-lg" style={{ fontFamily: 'Monotype Corsiva, cursive' }}>
-                  Adai Soluciones
+                  Adai Soluciones, S.R.L.
                 </h1>
                 <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto drop-shadow-md">
-                  Ingredientes para Panaderías, Reposterías y Consultoría Empresarial
+                  Ingredientes para Panaderías, Reposterías, Pastelerías y Consultoría Empresarial
                 </p>
                 <Link
                   href="/productos"
@@ -126,7 +125,7 @@ export default function Home() {
               <div className="relative h-80 rounded-tr-[100px] rounded-bl-[100px] overflow-hidden image-zoom">
                 <Image
                   src="/images/hero3.jpg"
-                  alt="Chef profesional"
+                  alt="Colaboradores"
                   fill
                   className="object-cover"
                 />
@@ -138,7 +137,7 @@ export default function Home() {
               <div className="relative h-80 rounded-tl-[100px] rounded-br-[100px] overflow-hidden image-zoom">
                 <Image
                   src="/images/hero6.png"
-                  alt="Panadería artesanal"
+                  alt="Colaboradores Adai"
                   fill
                   className="object-cover"
                 />
@@ -154,12 +153,12 @@ export default function Home() {
             <ScrollAnimation animation="fade-up" delay={0}>
               <div className="text-center md:border-r border-gray-400">
                 <h3 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-2 stat-number">
-                  <CountUp end={9} suffix="+" duration={2000} />
+                  <CountUp end={new Date().getFullYear() - 2017} suffix="+" duration={2000} />
                 </h3>
                 <p className="text-xs md:text-sm text-gray-700">
-                  Años de
+                  Años de Experiencia
                   <br />
-                  Experiencia
+                  <span className="text-xs text-gray-500">(desde 2017)</span>
                 </p>
               </div>
             </ScrollAnimation>
@@ -184,7 +183,7 @@ export default function Home() {
                 <h3 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-2 stat-number">
                   <CountUp end={25} suffix="+" duration={2000} />
                 </h3>
-                <p className="text-xs md:text-sm text-gray-700">Productos</p>
+                <p className="text-xs md:text-sm text-gray-700">Productos y Servicios</p>
               </div>
             </ScrollAnimation>
 
@@ -239,7 +238,7 @@ export default function Home() {
             <ScrollAnimation animation="slide-left">
               <div className="space-y-6">
                 <p className="text-gray-700 leading-relaxed">
-                  En Adai Soluciones SRL ofrecemos soluciones e ingredientes de alta calidad para panaderías, reposterías y negocios alimentarios, combinando insumos confiables con asesoría estratégica para mejorar procesos y impulsar el crecimiento. Nuestro enfoque está en brindar herramientas prácticas y eficientes que permitan producir con mayor consistencia y competitividad.
+                  En Adai Soluciones, S.R.L. ofrecemos soluciones e ingredientes de alta calidad para panaderías, reposterías, pastelerías y negocios alimentarios, combinando insumos confiables con asesoría estratégica para mejorar procesos e impulsar el crecimiento de nuestros aliados. Nuestro enfoque está en brindar herramientas prácticas que permitan producir con mayor eficiencia y calidad.
                 </p>
 
 
@@ -275,7 +274,7 @@ export default function Home() {
                     src="/images/aboutus.jpeg"
                     alt="Equipo Adai Soluciones"
                     fill
-                    className="object-cover"
+                    className="object-cover object-top"
                   />
                 </div>
               </div>
@@ -303,22 +302,22 @@ export default function Home() {
             <InstagramEmbed
               posts={[
                 {
-                  imageUrl: "/images/instagram/Frame 1 (1).png",
-                  postUrl: "https://www.instagram.com/adaisoluciones/",
-                  likes: 245,
-                  caption: "Productos de la mejor calidad para tu panadería 🥖✨",
-                },
-                {
-                  imageUrl: "/images/instagram/Frame 2.png",
-                  postUrl: "https://www.instagram.com/adaisoluciones/",
-                  likes: 189,
-                  caption: "Ingredientes que marcan la diferencia 🍞💪",
-                },
-                {
                   imageUrl: "/images/hero5.jpg",
                   postUrl: "https://www.instagram.com/adaisoluciones/",
+                  likes: 245,
+                  caption: "Los donuts perfectos con presentación atractiva y textura suave.",
+                },
+                {
+                  imageUrl: "/images/hero1.jpg",
+                  postUrl: "https://www.instagram.com/adaisoluciones/",
+                  likes: 189,
+                  caption: "Cupcakes de chocolate y vainilla para reposterías y pastelerías.",
+                },
+                {
+                  imageUrl: "/images/hero2.jpg",
+                  postUrl: "https://www.instagram.com/adaisoluciones/",
                   likes: 312,
-                  caption: "Deliciosos resultados con Adai Soluciones 🍩❤️",
+                  caption: "Torta de maíz elaborada con fórmula concentrada.",
                 },
               ]}
             />
@@ -333,9 +332,9 @@ export default function Home() {
           {/* Section Header */}
           <ScrollAnimation animation="fade-up">
             <div className="text-center mb-12">
-              <p className="text-sm text-gray-500 mb-2">ubicación</p>
+              <p className="text-sm text-gray-500 mb-2">Ubicación</p>
               <h2 className="text-3xl md:text-4xl font-serif text-gray-900 mb-12">
-                Donde Encontrarnos
+                Dónde encontrarnos
               </h2>
             </div>
           </ScrollAnimation>

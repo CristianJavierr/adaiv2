@@ -89,7 +89,7 @@ export default function InstagramEmbed({ posts }: InstagramEmbedProps) {
 
                             {/* Likes */}
                             <p className="text-sm font-semibold text-gray-900 mb-1">
-                                {post.likes?.toLocaleString() || Math.floor(Math.random() * 500 + 100)} Me gusta
+                                {(post.likes ?? 100 + index * 75).toLocaleString()} Me gusta
                             </p>
 
                             {/* Caption */}

@@ -14,13 +14,13 @@ export default function Footer() {
                                 alt="Adai Soluciones"
                                 width={120}
                                 height={50}
-                                className="brightness-0 invert"
+                                className="h-auto"
                             />
                         </Link>
                         <p className="text-sm text-gray-400 mb-6 leading-relaxed">
-                            Ingredientes de alta calidad para panaderías y reposterías,
+                            Adai Soluciones, S.R.L. ofrece ingredientes de alta calidad para panaderías, reposterías y pastelerías,
                             combinados con consultoría empresarial para impulsar el
-                            crecimiento de tu negocio.
+                            crecimiento de su empresa.
                         </p>
                         <div className="text-sm text-gray-400 space-y-1">
                             <p>info@adaisoluciones.com</p>
@@ -65,19 +65,13 @@ export default function Footer() {
                         <h3 className="text-white font-serif text-lg mb-6">Recursos</h3>
                         <ul className="space-y-3">
                             <li>
-                                <Link href="/soporte" className="text-gray-400 hover:text-white transition-colors text-sm">
-                                    Soporte
-                                </Link>
+                                <span className="text-gray-500 text-sm">Soporte</span>
                             </li>
                             <li>
-                                <Link href="/privacidad" className="text-gray-400 hover:text-white transition-colors text-sm">
-                                    Política de Privacidad
-                                </Link>
+                                <span className="text-gray-500 text-sm">Política de Privacidad</span>
                             </li>
                             <li>
-                                <Link href="/terminos" className="text-gray-400 hover:text-white transition-colors text-sm">
-                                    Términos y Condiciones
-                                </Link>
+                                <span className="text-gray-500 text-sm">Términos y Condiciones</span>
                             </li>
                         </ul>
                     </div>
@@ -148,7 +142,7 @@ export default function Footer() {
 
                 {/* Copyright */}
                 <div className="border-t border-gray-700 mt-12 pt-8 text-center text-sm text-gray-500">
-                    <p>© {new Date().getFullYear()} Adai Soluciones, SRL. Todos los derechos reservados.</p>
+                    <p>© {new Date().getFullYear()} Adai Soluciones, S.R.L. Todos los derechos reservados.</p>
                 </div>
             </div>
         </footer>

@@ -51,13 +51,13 @@ export default function QuienesSomos() {
                                 La Historia detrás de Adai Soluciones
                             </h2>
                             <p className="text-gray-700 leading-relaxed">
-                                Durante más de una década, combiné roles gerenciales, a nivel laboral, profesional y familiar, acumulando conocimientos y responsabilidades. Como sin darme cuenta, se fue afectando mi salud.
+                                Durante más de una década, combiné roles gerenciales, acumulando conocimientos y responsabilidades.
                             </p>
                             <p className="text-gray-700 leading-relaxed">
-                                En una noche de desvelo con pensamientos de inspiración, surge el logo de tulipán, con las iniciales de mis hijos se forma la marca: <strong>Adai</strong> y una voz interior: &quot;Ante las situaciones, las Soluciones&quot;. Así surgió el nombre comercial: <strong>Adai Soluciones</strong>.
+                                Como una inspiración surge la marca formada con las iniciales de mis hijos y la mía; el tulipán se dibuja iniciando con la A de Adai y la S de Soluciones, así surgió el nombre comercial.
                             </p>
                             <p className="text-gray-700 leading-relaxed">
-                                Una decisión de vida y fe: renuncié a tres empleos para cuidar mi salud y a mi familia con un ritmo distinto. Con el apoyo de siempre, habilitamos el local, desarrollamos productos y servicios, registramos la empresa, y comenzamos a darla a conocer en las panaderías de pueblos cercanos.
+                                Por decisión de vida y fe, renuncié a tres empleos y con el apoyo de la familia, habilitamos el local, desarrollamos productos y servicios, registramos la empresa, e iniciamos demostraciones en las panaderías y reposterías.
                             </p>
                             <p className="text-gray-700 leading-relaxed italic font-medium">
                                 Hoy mantenemos la certeza de que, para quien cree, toda obra para bien y que ante situaciones extremas deben generarse soluciones duraderas.
@@ -189,7 +189,7 @@ export default function QuienesSomos() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {/* Apertura */}
                         <div className="text-center p-6 animate-fade-in-up delay-100">
-                            <div className="w-20 h-20 bg-red-600 rounded-tr-[30px] rounded-bl-[30px] flex items-center justify-center mb-6 mx-auto hover-lift">
+                            <div className="w-20 h-20 bg-[#1d4f91] rounded-tr-[30px] rounded-bl-[30px] flex items-center justify-center mb-6 mx-auto hover-lift">
                                 <span className="text-3xl font-bold text-white">A</span>
                             </div>
                             <h3 className="text-lg font-semibold text-gray-900 mb-3">Apertura</h3>
@@ -200,7 +200,7 @@ export default function QuienesSomos() {
 
                         {/* Disciplina */}
                         <div className="text-center p-6 animate-fade-in-up delay-200">
-                            <div className="w-20 h-20 bg-red-600 rounded-tr-[30px] rounded-bl-[30px] flex items-center justify-center mb-6 mx-auto hover-lift">
+                            <div className="w-20 h-20 bg-[#1d4f91] rounded-tr-[30px] rounded-bl-[30px] flex items-center justify-center mb-6 mx-auto hover-lift">
                                 <span className="text-3xl font-bold text-white">D</span>
                             </div>
                             <h3 className="text-lg font-semibold text-gray-900 mb-3">Disciplina</h3>
@@ -211,7 +211,7 @@ export default function QuienesSomos() {
 
                         {/* Agilidad */}
                         <div className="text-center p-6 animate-fade-in-up delay-300">
-                            <div className="w-20 h-20 bg-red-600 rounded-tr-[30px] rounded-bl-[30px] flex items-center justify-center mb-6 mx-auto hover-lift">
+                            <div className="w-20 h-20 bg-[#1d4f91] rounded-tr-[30px] rounded-bl-[30px] flex items-center justify-center mb-6 mx-auto hover-lift">
                                 <span className="text-3xl font-bold text-white">A</span>
                             </div>
                             <h3 className="text-lg font-semibold text-gray-900 mb-3">Agilidad</h3>
@@ -222,7 +222,7 @@ export default function QuienesSomos() {
 
                         {/* Integridad */}
                         <div className="text-center p-6 animate-fade-in-up delay-400">
-                            <div className="w-20 h-20 bg-red-600 rounded-tr-[30px] rounded-bl-[30px] flex items-center justify-center mb-6 mx-auto hover-lift">
+                            <div className="w-20 h-20 bg-[#1d4f91] rounded-tr-[30px] rounded-bl-[30px] flex items-center justify-center mb-6 mx-auto hover-lift">
                                 <span className="text-3xl font-bold text-white">I</span>
                             </div>
                             <h3 className="text-lg font-semibold text-gray-900 mb-3">Integridad</h3>
@@ -235,7 +235,7 @@ export default function QuienesSomos() {
                     {/* ADAI Meaning */}
                     <div className="text-center mt-12 animate-fade-in-up delay-500">
                         <p className="text-lg text-gray-700 italic">
-                            <strong>A</strong>pertura + <strong>D</strong>isciplina + <strong>A</strong>gilidad + <strong>I</strong>ntegridad = <strong className="text-red-600">ADAI</strong>
+                            <strong className="text-[#1d4f91]">A</strong>pertura + <strong className="text-[#1d4f91]">D</strong>isciplina + <strong className="text-[#1d4f91]">A</strong>gilidad + <strong className="text-[#1d4f91]">I</strong>ntegridad = <strong className="text-[#1d4f91]">ADAI</strong>
                         </p>
                     </div>
                 </section>
@@ -246,17 +246,17 @@ export default function QuienesSomos() {
 
                     <div className="bg-gray-900 rounded-tr-[60px] rounded-bl-[60px] p-12 text-center animate-fade-in-scale">
                         <h2 className="text-2xl md:text-3xl font-serif text-white mb-4">
-                            ¿Quieres saber más sobre Adai Soluciones?
+                            ¿Desea saber más sobre Adai Soluciones?
                         </h2>
                         <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-                            Si deseas conocer cómo podemos colaborar contigo y tu negocio, no dudes en contactarnos.
+                            Si desea conocer cómo podemos colaborarle, no dude en contactarnos.
                         </p>
                         <Link
                             href="/contacto"
                             className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-4 rounded-tr-[30px] rounded-bl-[30px] border-2 border-red-600 hover:border-red-700 transition-colors uppercase tracking-wide btn-animate"
                             style={{ fontSize: '13px' }}
                         >
-                            CONTÁCTANOS
+                            CONTÁCTENOS
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"

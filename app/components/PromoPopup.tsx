@@ -94,14 +94,14 @@ export default function PromoPopup() {
 
                     {/* Badge */}
                     <span className="inline-block bg-yellow-400 text-yellow-900 text-xs font-bold px-3 py-1 rounded-full mb-3 animate-pulse">
-                        🔥 OFERTA EXCLUSIVA
+                        OFERTA EXCLUSIVA
                     </span>
 
                     <h2 className="text-white text-2xl font-bold mb-2">
-                        ¡Impulsa tu Negocio!
+                        Impulse su empresa
                     </h2>
                     <p className="text-white/90 text-sm">
-                        Obtén un <span className="font-bold">10% de descuento</span> en tu primer pedido
+                        Obtenga un <span className="font-bold">10% de descuento</span> en su primer pedido
                     </p>
                 </div>
 
@@ -133,7 +133,7 @@ export default function PromoPopup() {
                     </div>
 
                     <p className="text-gray-600 text-sm mb-6">
-                        Contáctanos ahora y recibe asesoría <strong>libre de costo</strong> + descuento especial en productos para tu panadería o repostería.
+                        Contáctenos ahora y reciba asesoría <strong>libre de costo</strong> y descuento especial en productos para panadería, repostería o pastelería.
                     </p>
 
                     {/* CTA Buttons */}

@@ -25,7 +25,9 @@ export default async function ProductPage({ params }: ProductPageProps) {
     }
 
     // Get related products (exclude current)
-    const relatedProducts = products.filter(p => p.id !== product.id).slice(0, 3);
+    const relatedProducts = products
+        .filter(p => p.id !== product.id && p.category === product.category)
+        .slice(0, 3);
 
     return (
         <div>
@@ -64,6 +66,9 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
                         {/* Product Info */}
                         <div className="animate-slide-in-right">
+                            <p className="text-sm text-red-600 font-semibold uppercase tracking-wide mb-3">
+                                {product.category}
+                            </p>
                             <h1 className="text-3xl md:text-4xl font-serif text-gray-900 mb-4">
                                 {product.name}
                             </h1>

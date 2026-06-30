@@ -24,7 +24,7 @@ const galleryImages: GalleryImage[] = [
     },
     {
         src: "/images/hero3.jpg",
-        alt: "Chef profesional",
+        alt: "Colaboradores",
         category: "Equipo"
     },
     {
@@ -39,7 +39,7 @@ const galleryImages: GalleryImage[] = [
     },
     {
         src: "/images/aboutus.jpeg",
-        alt: "Equipo Adai Soluciones",
+        alt: "Colaboradores Adai Soluciones",
         category: "Equipo"
     },
     {

@@ -5,6 +5,8 @@ import Link from "next/link";
 import { products } from "../data/products";
 
 export default function ProductosPage() {
+    const categories = ["Panaderías", "Reposterías", "Pastelerías"] as const;
+
     return (
         <div>
             <Navbar />
@@ -26,59 +28,76 @@ export default function ProductosPage() {
                             Nuestros Productos
                         </h1>
                         <p className="text-gray-600 max-w-2xl mx-auto">
-                            Ingredientes de alta calidad para panaderías y reposterías.
+                            Ingredientes de alta calidad para panaderías, reposterías y pastelerías.
                         </p>
                     </div>
                 </section>
 
                 {/* Products Grid */}
                 <section className="max-w-7xl mx-auto px-6 py-16">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {products.map((product, index) => (
-                            <Link
-                                key={product.id}
-                                href={`/productos/${product.id}`}
-                                className={`group bg-white border border-gray-100 rounded-lg overflow-hidden shadow-sm hover-lift animate-fade-in-up`}
-                                style={{ animationDelay: `${index * 0.1}s`, opacity: 0 }}
-                            >
-                                {/* Product Image */}
-                                <div className="bg-gray-50 p-8 flex items-center justify-center aspect-square image-zoom">
-                                    <Image
-                                        src={product.image}
-                                        alt={product.name}
-                                        width={250}
-                                        height={250}
-                                        className="object-contain group-hover:scale-105 transition-transform duration-300"
-                                    />
+                    <div className="space-y-16">
+                        {categories.map((category) => (
+                            <div key={category}>
+                                <div className="mb-8">
+                                    <p className="text-sm text-red-600 font-semibold uppercase tracking-wide mb-2">
+                                        {category}
+                                    </p>
+                                    <h2 className="text-2xl md:text-3xl font-serif text-gray-900">
+                                        Productos para {category.toLowerCase()}
+                                    </h2>
                                 </div>
 
-                                {/* Product Info */}
-                                <div className="p-6">
-                                    <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-red-600 transition-colors">
-                                        {product.name}
-                                    </h3>
-                                    <p className="text-sm text-gray-600 mb-4 line-clamp-2">
-                                        {product.description}
-                                    </p>
-                                    <span className="inline-flex items-center gap-2 text-red-600 font-medium text-sm">
-                                        Ver detalles
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            fill="none"
-                                            viewBox="0 0 24 24"
-                                            strokeWidth={2}
-                                            stroke="currentColor"
-                                            className="w-4 h-4 group-hover:translate-x-1 transition-transform"
-                                        >
-                                            <path
-                                                strokeLinecap="round"
-                                                strokeLinejoin="round"
-                                                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
-                                            />
-                                        </svg>
-                                    </span>
+                                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                                    {products
+                                        .filter((product) => product.category === category)
+                                        .map((product, index) => (
+                                            <Link
+                                                key={product.id}
+                                                href={`/productos/${product.id}`}
+                                                className="group bg-white border border-gray-100 rounded-lg overflow-hidden shadow-sm hover-lift animate-fade-in-up"
+                                                style={{ animationDelay: `${index * 0.1}s`, opacity: 0 }}
+                                            >
+                                                {/* Product Image */}
+                                                <div className="bg-gray-50 p-8 flex items-center justify-center aspect-square image-zoom">
+                                                    <Image
+                                                        src={product.image}
+                                                        alt={product.name}
+                                                        width={250}
+                                                        height={250}
+                                                        className="object-contain group-hover:scale-105 transition-transform duration-300"
+                                                    />
+                                                </div>
+
+                                                {/* Product Info */}
+                                                <div className="p-6">
+                                                    <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-red-600 transition-colors">
+                                                        {product.name}
+                                                    </h3>
+                                                    <p className="text-sm text-gray-600 mb-4 line-clamp-2">
+                                                        {product.description}
+                                                    </p>
+                                                    <span className="inline-flex items-center gap-2 text-red-600 font-medium text-sm">
+                                                        Ver detalles
+                                                        <svg
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            fill="none"
+                                                            viewBox="0 0 24 24"
+                                                            strokeWidth={2}
+                                                            stroke="currentColor"
+                                                            className="w-4 h-4 group-hover:translate-x-1 transition-transform"
+                                                        >
+                                                            <path
+                                                                strokeLinecap="round"
+                                                                strokeLinejoin="round"
+                                                                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                                                            />
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </Link>
+                                        ))}
                                 </div>
-                            </Link>
+                            </div>
                         ))}
                     </div>
                 </section>
@@ -87,17 +106,17 @@ export default function ProductosPage() {
                 <section className="bg-gray-50 py-16">
                     <div className="max-w-7xl mx-auto px-6 text-center animate-fade-in-up">
                         <h2 className="text-2xl md:text-3xl font-serif text-gray-900 mb-4">
-                            ¿Necesitas más información?
+                            ¿Necesita más información?
                         </h2>
                         <p className="text-gray-600 mb-8 max-w-xl mx-auto">
-                            Contáctanos para conocer más sobre nuestros productos y cómo pueden ayudar a tu negocio.
+                            Contáctenos para conocer más sobre nuestros productos y cómo pueden ayudar a su empresa.
                         </p>
                         <Link
                             href="/contacto"
                             className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-4 rounded-tr-[30px] rounded-bl-[30px] transition-colors uppercase tracking-wide btn-animate"
                             style={{ fontSize: '13px' }}
                         >
-                            Contáctanos
+                            Contáctenos
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
