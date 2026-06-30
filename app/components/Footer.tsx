@@ -14,7 +14,7 @@ export default function Footer() {
                                 alt="Adai Soluciones"
                                 width={120}
                                 height={50}
-                                className="h-auto"
+                                className="h-auto brightness-0 invert"
                             />
                         </Link>
                         <p className="text-sm text-gray-400 mb-6 leading-relaxed">
