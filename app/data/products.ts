@@ -15,7 +15,7 @@ export const products: Product[] = [
         id: "cupcake",
         name: "Adai Cupcake Vainilla",
         category: "Reposterías",
-        image: "/images/products/cupcake.png",
+        image: "/images/products/cupcake-bolsas-actualizada.png",
         description: "Premezcla para cupcake de vainilla diseñada para prolongar la vida de anaquel y ahorrar adición de huevos y componentes grasos.",
         longDescription: "Nuestra premezcla para cupcake de vainilla está diseñada para prolongar la vida de anaquel, ahorrar adición de huevos y componentes grasos.",
         features: [
@@ -49,7 +49,7 @@ export const products: Product[] = [
         id: "base-pan-integral",
         name: "Adai Base para Pan Integral",
         category: "Panaderías",
-        image: "/images/products/mejorante.png",
+        image: "/images/products/base-bolsas-actualizada.png",
         description: "Base para panes integrales de sabor ligeramente dulce, miga de color marrón natural y olor característico.",
         longDescription: "Base para panes integrales de sabor ligeramente dulce, miga de color marrón natural y olor característico.",
         features: [
@@ -82,7 +82,7 @@ export const products: Product[] = [
         id: "vainilla",
         name: "Adai Base Concentrada Pastel Vainilla",
         category: "Pastelerías",
-        image: "/images/products/base-concentrada-pastel-vainilla-bolsas.png",
+        image: "/images/products/base-bolsas-actualizada.png",
         description: "Base concentrada 1:10 de harina para pasteles, con miga firme, esponjosa y sabor a vainilla natural.",
         longDescription: "La más concentrada (1:10 de harina) para pasteles, es la opción preferida de reposteros profesionales por aportar una miga firme, esponjosa de un sabor a vainilla natural que cautiva desde el primer bocado.",
         features: [
@@ -99,7 +99,7 @@ export const products: Product[] = [
         id: "pastel-maiz",
         name: "Adai Base Pastel de Maíz",
         category: "Pastelerías",
-        image: "/images/products/vainilla.png",
+        image: "/images/products/base-bolsas-actualizada.png",
         description: "Base concentrada 1:10 de harina para pasteles de maíz, diseñada para ahorrar huevos y componentes grasos.",
         longDescription: "Base Concentrada (1:10 de harina) para Pasteles de Maíz, diseñada para ahorrar adición de huevos y componentes grasos, para desarrollar un producto de sabor exquisito.",
         features: [
@@ -115,7 +115,7 @@ export const products: Product[] = [
         id: "cupcake-chocolate",
         name: "Adai Cupcake Chocolate",
         category: "Reposterías",
-        image: "/images/products/cupcake-chocolate-bolsas.png",
+        image: "/images/products/cupcake-bolsas-actualizada.png",
         description: "Premezcla para cupcake de chocolate diseñada para prolongar la vida de anaquel y ahorrar adición de huevos y componentes grasos.",
         longDescription: "Nuestra premezcla para cupcake de Chocolate está diseñada para prolongar la vida de anaquel, ahorrar adición de huevos y componentes grasos.",
         features: [
