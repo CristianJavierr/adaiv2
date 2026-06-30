@@ -163,6 +163,159 @@ export default async function ProductPage({ params }: ProductPageProps) {
                     </div>
                 </section>
 
+                {product.technicalSheet && (
+                    <section className="border-t border-gray-200 bg-white py-16">
+                        <div className="max-w-7xl mx-auto px-6">
+                            <div className="mb-10">
+                                <p className="text-sm text-red-600 font-semibold uppercase tracking-wide mb-2">
+                                    Información técnica
+                                </p>
+                                <h2 className="text-3xl md:text-4xl font-serif text-gray-900 mb-4">
+                                    Ficha Técnica
+                                </h2>
+                                <div className="bg-gray-50 border border-gray-100 rounded-lg p-6">
+                                    <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-6">
+                                        <div>
+                                            <p className="font-semibold text-gray-900">Adai Soluciones, S.R.L.</p>
+                                            <p className="text-sm text-gray-600">
+                                                Ingredientes para Panaderías y Reposterías, Consultoría Empresarial
+                                            </p>
+                                            <p className="text-sm text-gray-600">
+                                                Privada Braulio Báez No.2, Reparto Peralta, Santiago, República Dominicana.
+                                            </p>
+                                        </div>
+                                        <div className="text-sm text-gray-600 lg:text-right">
+                                            <p>809-247-9182</p>
+                                            <p>RNC: 131540481</p>
+                                            <p>RI-RD-17-01070</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {product.technicalSheet.subtitle && (
+                                <h3 className="text-xl font-semibold text-gray-900 mb-8 uppercase">
+                                    {product.technicalSheet.subtitle}
+                                </h3>
+                            )}
+
+                            <div className="grid grid-cols-1 xl:grid-cols-[minmax(0,1fr)_360px] gap-10 items-start">
+                                <div className="space-y-10">
+                                    {product.technicalSheet.recipe && (
+                                        <div>
+                                            <h3 className="text-xl font-serif text-gray-900 mb-4">
+                                                Recomendación de uso
+                                            </h3>
+                                            <div className="overflow-x-auto rounded-lg border border-gray-100">
+                                                <table className="w-full text-sm text-left">
+                                                    <thead className="bg-gray-50 text-gray-900">
+                                                        <tr>
+                                                            <th className="px-5 py-4 font-semibold">Ingrediente</th>
+                                                            <th className="px-5 py-4 font-semibold">Libras</th>
+                                                            <th className="px-5 py-4 font-semibold">Onzas</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        {product.technicalSheet.recipe.map((item) => (
+                                                            <tr key={item.item} className="border-t border-gray-100">
+                                                                <td className="px-5 py-4 text-gray-700">{item.item}</td>
+                                                                <td className="px-5 py-4 text-gray-600">{item.pounds || "-"}</td>
+                                                                <td className="px-5 py-4 text-gray-600">{item.ounces || "-"}</td>
+                                                            </tr>
+                                                        ))}
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    )}
+
+                                    {product.technicalSheet.preparation && (
+                                        <div>
+                                            <h3 className="text-xl font-serif text-gray-900 mb-4">Preparación</h3>
+                                            <ol className="space-y-3 text-gray-600">
+                                                {product.technicalSheet.preparation.map((step, index) => (
+                                                    <li key={step} className="flex gap-3 leading-relaxed">
+                                                        <span className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-red-600 text-xs font-semibold text-white">
+                                                            {index + 1}
+                                                        </span>
+                                                        <span>{step}</span>
+                                                    </li>
+                                                ))}
+                                            </ol>
+                                        </div>
+                                    )}
+
+                                    {product.technicalSheet.allergens && (
+                                        <div>
+                                            <h3 className="text-xl font-serif text-gray-900 mb-4">Alérgenos</h3>
+                                            <div className="overflow-x-auto rounded-lg border border-gray-100">
+                                                <table className="w-full text-sm text-left">
+                                                    <thead className="bg-gray-50 text-gray-900">
+                                                        <tr>
+                                                            <th className="px-5 py-4 font-semibold">Alérgeno</th>
+                                                            <th className="px-5 py-4 font-semibold">Presencia</th>
+                                                            <th className="px-5 py-4 font-semibold">Descripción</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        {product.technicalSheet.allergens.map((item) => (
+                                                            <tr key={item.allergen} className="border-t border-gray-100">
+                                                                <td className="px-5 py-4 text-gray-700">{item.allergen}</td>
+                                                                <td className="px-5 py-4 text-gray-600">{item.present ? "Sí" : "No"}</td>
+                                                                <td className="px-5 py-4 text-gray-600">{item.description || "-"}</td>
+                                                            </tr>
+                                                        ))}
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    )}
+                                </div>
+
+                                <aside className="space-y-6">
+                                    {product.technicalSheet.composition && (
+                                        <div className="rounded-lg border border-gray-100 bg-gray-50 p-6">
+                                            <h3 className="text-lg font-semibold text-gray-900 mb-3">Composición</h3>
+                                            <p className="text-sm leading-relaxed text-gray-600">{product.technicalSheet.composition}</p>
+                                        </div>
+                                    )}
+
+                                    {product.technicalSheet.characteristics && (
+                                        <div className="rounded-lg border border-gray-100 bg-gray-50 p-6">
+                                            <h3 className="text-lg font-semibold text-gray-900 mb-3">Características</h3>
+                                            <p className="text-sm leading-relaxed text-gray-600">{product.technicalSheet.characteristics}</p>
+                                        </div>
+                                    )}
+
+                                    {product.technicalSheet.shelfLife && (
+                                        <div className="rounded-lg border border-gray-100 bg-gray-50 p-6">
+                                            <h3 className="text-lg font-semibold text-gray-900 mb-3">Vida Útil</h3>
+                                            <p className="text-sm leading-relaxed text-gray-600">{product.technicalSheet.shelfLife}</p>
+                                        </div>
+                                    )}
+
+                                    {product.technicalSheet.sanitaryRegistration && (
+                                        <div className="rounded-lg border border-gray-100 bg-gray-50 p-6">
+                                            <h3 className="text-lg font-semibold text-gray-900 mb-3">Reg. San.</h3>
+                                            <p className="text-sm leading-relaxed text-gray-600">{product.technicalSheet.sanitaryRegistration}</p>
+                                        </div>
+                                    )}
+
+                                    {product.technicalSheet.approvals && (
+                                        <div className="rounded-lg border border-gray-100 bg-gray-50 p-6">
+                                            <h3 className="text-lg font-semibold text-gray-900 mb-3">Responsables</h3>
+                                            <div className="space-y-3 text-sm leading-relaxed text-gray-600">
+                                                <p><span className="font-semibold text-gray-900">Realizado por:</span> {product.technicalSheet.approvals.preparedBy}</p>
+                                                <p><span className="font-semibold text-gray-900">Verificado por:</span> {product.technicalSheet.approvals.verifiedBy}</p>
+                                            </div>
+                                        </div>
+                                    )}
+                                </aside>
+                            </div>
+                        </div>
+                    </section>
+                )}
+
                 {/* Related Products */}
                 <section className="bg-gray-50 py-16">
                     <div className="max-w-7xl mx-auto px-6">
