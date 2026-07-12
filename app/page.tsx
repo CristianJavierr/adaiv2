@@ -9,6 +9,10 @@ import Link from "next/link";
 import { ScrollAnimation } from "./components/ScrollAnimation";
 import { CountUp } from "./components/CountUp";
 import PromoPopup from "./components/PromoPopup";
+import Hero from "./components/Hero";
+import TitleReveal from "./components/TitleReveal";
+import MaskTextReveal from "./components/MaskTextReveal";
+import TeamCarousel from "./components/TeamCarousel";
 
 export default function Home() {
   return (
@@ -16,131 +20,44 @@ export default function Home() {
       <PromoPopup />
       <Navbar />
       <main className="min-h-screen bg-white">
-        {/* Hero Section with Video Background */}
-        <section className="relative overflow-hidden">
-          {/* Video Background */}
-          <div className="absolute inset-0 w-full h-full">
-            <video
-              autoPlay
-              muted
-              loop
-              playsInline
-              className="absolute inset-0 w-full h-full object-cover"
-            >
-              <source src="/images/videos/vecteezy_close-up-of-chefs-hand-in-white-cook-uniforms-and-aprons_6551017.mp4" type="video/mp4" />
-            </video>
-            {/* Dark Overlay for text readability */}
-            <div className="absolute inset-0 bg-black/50"></div>
-          </div>
-
-          {/* Text Content */}
-          <div className="relative z-10 max-w-7xl mx-auto px-6 py-24 md:py-32">
-            <ScrollAnimation animation="fade-up" duration={0.7}>
-              <div className="text-center">
-                <h1 className="text-5xl md:text-6xl text-white mb-2 italic drop-shadow-lg" style={{ fontFamily: 'Monotype Corsiva, cursive' }}>
-                  Adai Soluciones, S.R.L.
-                </h1>
-                <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto drop-shadow-md">
-                  Ingredientes para Panaderías, Reposterías, Pastelerías y Consultoría Empresarial
-                </p>
-                <Link
-                  href="/productos"
-                  className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-4 rounded-tr-[30px] rounded-bl-[30px] border-2 border-red-600 hover:border-red-700 transition-colors uppercase tracking-wide btn-animate"
-                  style={{ fontSize: '13px' }}
-                >
-                  NUESTROS PRODUCTOS
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={2}
-                    stroke="currentColor"
-                    className="w-5 h-5"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
-                    />
-                  </svg>
-                </Link>
-              </div>
-            </ScrollAnimation>
-          </div>
-        </section>
+        <Hero />
 
         {/* Image Gallery Section */}
         <section className="max-w-7xl mx-auto px-6 py-16">
           <div className="grid grid-cols-2 md:grid-cols-6 gap-4 mt-16">
-            {/* Image 1 - Donuts */}
             <ScrollAnimation animation="fade-scale" delay={0}>
               <div className="relative h-80 rounded-tr-[100px] rounded-bl-[100px] overflow-hidden image-zoom">
-                <Image
-                  src="/images/hero5.jpg"
-                  alt="Donuts artesanales"
-                  fill
-                  className="object-cover"
-                />
+                <Image src="/images/hero5.jpg" alt="Donuts artesanales" fill className="object-cover" />
               </div>
             </ScrollAnimation>
 
-            {/* Image 2 - Products */}
             <ScrollAnimation animation="fade-scale" delay={0.1}>
               <div className="relative h-80 rounded-tl-[100px] rounded-br-[100px] overflow-hidden image-zoom">
-                <Image
-                  src="/images/hero4.jpg"
-                  alt="Productos Adai"
-                  fill
-                  className="object-cover"
-                />
+                <Image src="/images/hero4.jpg" alt="Productos Adai" fill className="object-cover" />
               </div>
             </ScrollAnimation>
 
-            {/* Image 3 - Cake */}
             <ScrollAnimation animation="fade-scale" delay={0.2}>
               <div className="relative h-80 rounded-tr-[100px] rounded-bl-[100px] overflow-hidden image-zoom">
-                <Image
-                  src="/images/hero2.jpg"
-                  alt="Pastel artesanal"
-                  fill
-                  className="object-cover"
-                />
+                <Image src="/images/hero2.jpg" alt="Pastel artesanal" fill className="object-cover" />
               </div>
             </ScrollAnimation>
 
-            {/* Image 4 - Cupcakes */}
             <ScrollAnimation animation="fade-scale" delay={0.3}>
               <div className="relative h-80 rounded-tl-[100px] rounded-br-[100px] overflow-hidden image-zoom">
-                <Image
-                  src="/images/hero1.jpg"
-                  alt="Cupcakes decorados"
-                  fill
-                  className="object-cover"
-                />
+                <Image src="/images/hero1.jpg" alt="Cupcakes decorados" fill className="object-cover" />
               </div>
             </ScrollAnimation>
 
-            {/* Image 5 - Chef */}
             <ScrollAnimation animation="fade-scale" delay={0.4}>
               <div className="relative h-80 rounded-tr-[100px] rounded-bl-[100px] overflow-hidden image-zoom">
-                <Image
-                  src="/images/hero3.jpg"
-                  alt="Colaboradores"
-                  fill
-                  className="object-cover"
-                />
+                <Image src="/images/hero3.jpg" alt="Colaboradores" fill className="object-cover" />
               </div>
             </ScrollAnimation>
 
-            {/* Image 6 - New */}
             <ScrollAnimation animation="fade-scale" delay={0.5}>
               <div className="relative h-80 rounded-tl-[100px] rounded-br-[100px] overflow-hidden image-zoom">
-                <Image
-                  src="/images/hero6.png"
-                  alt="Colaboradores Adai"
-                  fill
-                  className="object-cover"
-                />
+                <Image src="/images/hero6.png" alt="Colaboradores Adai" fill className="object-cover" />
               </div>
             </ScrollAnimation>
           </div>
@@ -202,14 +119,12 @@ export default function Home() {
         {/* Products Section */}
         <section className="max-w-7xl mx-auto px-6 py-16">
           {/* Section Header */}
-          <ScrollAnimation animation="fade-up">
-            <div className="text-center mb-12">
-              <p className="text-sm text-gray-500 mb-2">Nuestros Productos</p>
-              <h2 className="text-3xl md:text-4xl font-serif text-gray-900">
-                Ingredientes de Calidad a Precio Competitivo
-              </h2>
-            </div>
-          </ScrollAnimation>
+          <div className="text-center mb-12">
+            <MaskTextReveal className="text-sm text-gray-500 mb-2">Nuestros Productos</MaskTextReveal>
+            <TitleReveal className="text-3xl md:text-4xl font-serif text-gray-900">
+              Ingredientes de Calidad a Precio Competitivo
+            </TitleReveal>
+          </div>
 
           {/* Products Carousel */}
           <ScrollAnimation animation="fade-up" delay={0.2}>
@@ -223,23 +138,20 @@ export default function Home() {
           <div className="border-t border-gray-200 mb-16"></div>
 
           {/* Section Header */}
-          <ScrollAnimation animation="fade-up">
-            <div className="text-center mb-12">
-              <p className="text-sm text-gray-500 mb-2">Acerca de nosotros</p>
-              <h2 className="text-3xl md:text-4xl font-serif text-gray-900 mb-12">
-                Por qué elegir Adai
-              </h2>
-            </div>
-          </ScrollAnimation>
+          <div className="text-center mb-12">
+            <MaskTextReveal className="text-sm text-gray-500 mb-2">Acerca de nosotros</MaskTextReveal>
+            <TitleReveal className="text-3xl md:text-4xl font-serif text-gray-900 mb-12">
+              Por qué elegir Adai
+            </TitleReveal>
+          </div>
 
           {/* Two Column Layout */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Column - Text Content */}
-            <ScrollAnimation animation="slide-left">
-              <div className="space-y-6">
-                <p className="text-gray-700 leading-relaxed">
+            <div className="space-y-6">
+                <MaskTextReveal className="text-gray-700 leading-relaxed">
                   En Adai Soluciones, S.R.L. ofrecemos soluciones e ingredientes de alta calidad para panaderías, reposterías, pastelerías y negocios alimentarios, combinando insumos confiables con asesoría estratégica para mejorar procesos e impulsar el crecimiento de nuestros aliados. Nuestro enfoque está en brindar herramientas prácticas que permitan producir con mayor eficiencia y calidad.
-                </p>
+                </MaskTextReveal>
 
 
                 <Link
@@ -263,18 +175,17 @@ export default function Home() {
                     />
                   </svg>
                 </Link>
-              </div>
-            </ScrollAnimation>
+            </div>
 
             {/* Right Column - Image */}
             <ScrollAnimation animation="slide-right">
-              <div className="relative">
-                <div className="relative rounded-tl-[100px] rounded-br-[100px] overflow-hidden aspect-[4/3] image-zoom">
+              <div className="relative mx-auto w-full max-w-md">
+                <div className="relative aspect-[4/5] overflow-hidden rounded-tl-[100px] rounded-br-[100px] bg-gray-50">
                   <Image
-                    src="/images/aboutus.jpeg"
+                    src="/images/team/_MG_9071.jpg"
                     alt="Equipo Adai Soluciones"
                     fill
-                    className="object-cover object-top"
+                    className="object-cover object-center"
                   />
                 </div>
               </div>
@@ -288,14 +199,12 @@ export default function Home() {
           <div className="border-t border-gray-200 mb-16"></div>
 
           {/* Section Header */}
-          <ScrollAnimation animation="fade-up">
-            <div className="text-center mb-12">
-              <p className="text-sm text-gray-500 mb-2">Instagram</p>
-              <h2 className="text-3xl md:text-4xl font-serif text-gray-900 mb-12">
-                Nuestras últimas publicaciones
-              </h2>
-            </div>
-          </ScrollAnimation>
+          <div className="text-center mb-12">
+            <MaskTextReveal className="text-sm text-gray-500 mb-2">Instagram</MaskTextReveal>
+            <TitleReveal className="text-3xl md:text-4xl font-serif text-gray-900 mb-12">
+              Nuestras últimas publicaciones
+            </TitleReveal>
+          </div>
 
           {/* Instagram Posts */}
           <ScrollAnimation animation="zoom-in" delay={0.1}>
@@ -324,20 +233,30 @@ export default function Home() {
           </ScrollAnimation>
         </section>
 
+        {/* Team Section */}
+        <section className="max-w-7xl mx-auto px-6 py-16">
+          <div className="text-center mb-12">
+            <MaskTextReveal className="text-sm text-gray-500 mb-2">El equipo Adai</MaskTextReveal>
+            <TitleReveal className="text-3xl md:text-4xl font-serif text-gray-900">
+              Nuestro equipo
+            </TitleReveal>
+          </div>
+
+          <TeamCarousel />
+        </section>
+
         {/* Location Section */}
         <section className="max-w-7xl mx-auto px-6 py-16">
           {/* Divider Line */}
           <div className="border-t border-gray-200 mb-16"></div>
 
           {/* Section Header */}
-          <ScrollAnimation animation="fade-up">
-            <div className="text-center mb-12">
-              <p className="text-sm text-gray-500 mb-2">Ubicación</p>
-              <h2 className="text-3xl md:text-4xl font-serif text-gray-900 mb-12">
-                Dónde encontrarnos
-              </h2>
-            </div>
-          </ScrollAnimation>
+          <div className="text-center mb-12">
+            <MaskTextReveal className="text-sm text-gray-500 mb-2">Ubicación</MaskTextReveal>
+            <TitleReveal className="text-3xl md:text-4xl font-serif text-gray-900 mb-12">
+              Dónde encontrarnos
+            </TitleReveal>
+          </div>
 
           {/* Map */}
           <ScrollAnimation animation="zoom-in" duration={0.8}>

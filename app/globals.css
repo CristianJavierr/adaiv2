@@ -169,6 +169,62 @@ body {
   transform: scale(1.05);
 }
 
+/* Word-by-word title reveal, based on the clipped text treatment. */
+.title-reveal__word {
+  display: inline-block;
+  overflow: hidden;
+  margin-right: 0.25em;
+  vertical-align: top;
+}
+
+.title-reveal__word:last-child {
+  margin-right: 0;
+}
+
+.title-reveal__character {
+  display: inline-block;
+  will-change: transform, clip-path;
+}
+
+.mask-text-reveal {
+  position: relative;
+  overflow: hidden;
+}
+
+.mask-text-reveal__content {
+  display: block;
+}
+
+.mask-text-reveal__line {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background: #fff;
+}
+
+.mask-text-reveal__character {
+  display: inline-block;
+  will-change: transform;
+}
+
+.team-carousel-control {
+  display: grid;
+  width: 2.5rem;
+  height: 2.5rem;
+  place-items: center;
+  border: 1px solid #d1d5db;
+  border-radius: 9999px;
+  color: #374151;
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.team-carousel-control:hover {
+  border-color: #dc2626;
+  background-color: #dc2626;
+  color: #fff;
+}
+
+
 /* Button hover animation */
 .btn-animate {
   transition: all 0.3s ease;
