@@ -5,6 +5,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { products, getProductById, getAllProductIds } from "../../data/products";
 
+const SHOW_TECHNICAL_SHEET = false;
+
 // Generate static params for all products
 export function generateStaticParams() {
     return getAllProductIds().map((id) => ({
@@ -163,7 +165,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                     </div>
                 </section>
 
-                {product.technicalSheet && (
+                {SHOW_TECHNICAL_SHEET && product.technicalSheet && (
                     <section className="border-t border-gray-200 bg-white py-16">
                         <div className="max-w-7xl mx-auto px-6">
                             <div className="mb-10">

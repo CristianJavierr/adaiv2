@@ -5,7 +5,7 @@ import Link from "next/link";
 import { products } from "../data/products";
 
 export default function ProductosPage() {
-    const categories = ["Panaderías", "Reposterías", "Pastelerías"] as const;
+    const categories = ["Panaderías", "Reposterías"] as const;
 
     return (
         <div>

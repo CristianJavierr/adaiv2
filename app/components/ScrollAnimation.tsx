@@ -17,10 +17,32 @@ export function useScrollAnimation(options: UseScrollAnimationOptions = {}) {
         const element = ref.current;
         if (!element) return;
 
+        // Fallback for browsers that don't support IntersectionObserver
+        if (typeof window === "undefined" || !("IntersectionObserver" in window)) {
+            setIsVisible(true);
+            return;
+        }
+
+        // Resiliency check 1: If the element is already in the viewport on mount, trigger it immediately
+        const rect = element.getBoundingClientRect();
+        const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+        const isPartiallyInViewport = rect.top < viewportHeight && rect.bottom > 0;
+        
+        if (isPartiallyInViewport) {
+            setIsVisible(true);
+            if (triggerOnce) return;
+        }
+
+        // Resiliency check 2: Backup timer to force visibility if the observer fails to trigger (e.g. layout shifts)
+        const backupTimer = setTimeout(() => {
+            setIsVisible(true);
+        }, 1000);
+
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.isIntersecting) {
                     setIsVisible(true);
+                    clearTimeout(backupTimer);
                     if (triggerOnce) {
                         observer.unobserve(element);
                     }
@@ -33,7 +55,10 @@ export function useScrollAnimation(options: UseScrollAnimationOptions = {}) {
 
         observer.observe(element);
 
-        return () => observer.disconnect();
+        return () => {
+            clearTimeout(backupTimer);
+            observer.disconnect();
+        };
     }, [threshold, rootMargin, triggerOnce]);
 
     return { ref, isVisible };

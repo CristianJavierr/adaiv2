@@ -13,6 +13,7 @@ import Hero from "./components/Hero";
 import TitleReveal from "./components/TitleReveal";
 import MaskTextReveal from "./components/MaskTextReveal";
 import TeamCarousel from "./components/TeamCarousel";
+import GalleryReveal from "./components/GalleryReveal";
 
 export default function Home() {
   return (
@@ -23,45 +24,7 @@ export default function Home() {
         <Hero />
 
         {/* Image Gallery Section */}
-        <section className="max-w-7xl mx-auto px-6 py-16">
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-4 mt-16">
-            <ScrollAnimation animation="fade-scale" delay={0}>
-              <div className="relative h-80 rounded-tr-[100px] rounded-bl-[100px] overflow-hidden image-zoom">
-                <Image src="/images/hero5.jpg" alt="Donuts artesanales" fill className="object-cover" />
-              </div>
-            </ScrollAnimation>
-
-            <ScrollAnimation animation="fade-scale" delay={0.1}>
-              <div className="relative h-80 rounded-tl-[100px] rounded-br-[100px] overflow-hidden image-zoom">
-                <Image src="/images/hero4.jpg" alt="Productos Adai" fill className="object-cover" />
-              </div>
-            </ScrollAnimation>
-
-            <ScrollAnimation animation="fade-scale" delay={0.2}>
-              <div className="relative h-80 rounded-tr-[100px] rounded-bl-[100px] overflow-hidden image-zoom">
-                <Image src="/images/hero2.jpg" alt="Pastel artesanal" fill className="object-cover" />
-              </div>
-            </ScrollAnimation>
-
-            <ScrollAnimation animation="fade-scale" delay={0.3}>
-              <div className="relative h-80 rounded-tl-[100px] rounded-br-[100px] overflow-hidden image-zoom">
-                <Image src="/images/hero1.jpg" alt="Cupcakes decorados" fill className="object-cover" />
-              </div>
-            </ScrollAnimation>
-
-            <ScrollAnimation animation="fade-scale" delay={0.4}>
-              <div className="relative h-80 rounded-tr-[100px] rounded-bl-[100px] overflow-hidden image-zoom">
-                <Image src="/images/hero3.jpg" alt="Colaboradores" fill className="object-cover" />
-              </div>
-            </ScrollAnimation>
-
-            <ScrollAnimation animation="fade-scale" delay={0.5}>
-              <div className="relative h-80 rounded-tl-[100px] rounded-br-[100px] overflow-hidden image-zoom">
-                <Image src="/images/hero6.png" alt="Colaboradores Adai" fill className="object-cover" />
-              </div>
-            </ScrollAnimation>
-          </div>
-        </section>
+        <GalleryReveal />
 
         {/* Statistics Section */}
         <section className="max-w-7xl mx-auto px-6 py-16">
@@ -202,7 +165,7 @@ export default function Home() {
           <div className="text-center mb-12">
             <MaskTextReveal className="text-sm text-gray-500 mb-2">Instagram</MaskTextReveal>
             <TitleReveal className="text-3xl md:text-4xl font-serif text-gray-900 mb-12">
-              Nuestras últimas publicaciones
+              Nuestras publicaciones recientes
             </TitleReveal>
           </div>
 
@@ -263,7 +226,7 @@ export default function Home() {
             <div className="w-full flex justify-center">
               <div className="w-full max-w-4xl rounded-lg overflow-hidden shadow-lg">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.395936027385!2d-70.7068515!3d19.438488900000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eb1cfd097b75d19%3A0x9cf57a1013760d05!2sAdai%20Soluciones%2C%20SRL.!5e0!3m2!1ses-419!2sdo!4v1764968987895!5m2!1ses-419!2sdo"
+                  src="https://www.google.com/maps?q=Adai+Soluciones,+Privada+Braulio+B%C3%A1ez+No.+2,+Reparto+Peralta,+Santiago+de+los+Caballeros&output=embed"
                   width="100%"
                   height="450"
                   style={{ border: 0 }}
@@ -280,7 +243,7 @@ export default function Home() {
           <ScrollAnimation animation="fade-up" delay={0.3}>
             <div className="flex justify-center mt-8">
               <a
-                href="https://maps.google.com/?q=Adai+Soluciones,+SRL."
+                href="https://www.google.com/maps/search/?api=1&query=Adai+Soluciones,+Privada+Braulio+B%C3%A1ez+No.+2,+Reparto+Peralta,+Santiago+de+los+Caballeros"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-4 rounded-tr-[30px] rounded-bl-[30px] border-2 border-red-600 hover:border-red-700 transition-colors uppercase tracking-wide btn-animate"

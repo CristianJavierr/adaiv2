@@ -1,10 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import NextImage from "next/image";
 import { useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap";
-
-const heroTitleWords = ["Adai", "Soluciones,", "S.R.L."];
 
 export default function Hero() {
   const heroRef = useRef<HTMLElement>(null);
@@ -39,18 +38,30 @@ export default function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-24 md:py-32">
         <div className="text-center">
           <h1 className="hero-title text-5xl md:text-6xl text-white mb-2 italic drop-shadow-lg" style={{ fontFamily: "Monotype Corsiva, cursive" }}>
-            {heroTitleWords.map((word) => (
-              <span className="title-reveal__word" key={word}>
-                {Array.from(word).map((character, characterIndex) => (
-                  <span className="hero-title-character title-reveal__character" key={`${character}-${characterIndex}`}>
-                    {character}
-                  </span>
-                ))}
-              </span>
-            ))}
+            <img
+              src="/images/logo.png"
+              alt="Adai"
+              className="inline-block h-[0.9em] w-auto mr-2 md:mr-3 brightness-0 invert"
+              style={{ verticalAlign: "middle", position: "relative", top: "-7.5px" }}
+            />
+            <span className="title-reveal__word" style={{ overflow: "visible", verticalAlign: "middle" }}>
+              {"Soluciones,".split("").map((character, characterIndex) => (
+                <span className="hero-title-character title-reveal__character" key={`sol-${characterIndex}`}>
+                  {character}
+                </span>
+              ))}
+            </span>
+            {" "}
+            <span className="title-reveal__word" style={{ overflow: "visible", verticalAlign: "middle" }}>
+              {"S.R.L.".split("").map((character, characterIndex) => (
+                <span className="hero-title-character title-reveal__character" key={`srl-${characterIndex}`}>
+                  {character}
+                </span>
+              ))}
+            </span>
           </h1>
-          <p className="hero-description text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto drop-shadow-md">
-            Ingredientes para Panaderías, Reposterías, Pastelerías y Consultoría Empresarial
+          <p className="hero-description text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto drop-shadow-md whitespace-pre-line leading-relaxed">
+            Ingredientes para Panaderías, Reposterías, Pastelerías{"\n"}Consultoría Empresarial
           </p>
           <div className="hero-cta-reveal">
             <Link

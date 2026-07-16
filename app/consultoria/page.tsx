@@ -57,9 +57,9 @@ export default function ConsultoriaPage() {
                                     Servicios para formalizar y fortalecer su empresa
                                 </h1>
                                 <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                                    En Adai Soluciones, S.R.L. acompañamos a empresas de alimentos, comercios y
-                                    establecimientos regulados en procesos de registros, etiquetados, licencias y
-                                    habilitaciones.
+                                    Acompañamos a emprendedores de las área de alimentos, farmacéutica y químicos
+                                    en los procesos de certificaciones, registros, licencias y habilitaciones por las
+                                    distintas instituciones de la República Dominicana.
                                 </p>
                                 <Link
                                     href="/contacto"
@@ -150,14 +150,11 @@ export default function ConsultoriaPage() {
                                     Trabajamos con una revisión inicial de necesidades, levantamiento de requisitos,
                                     preparación documental y seguimiento del proceso correspondiente.
                                 </p>
-                                <p className="text-gray-700 leading-relaxed">
-                                    También podemos incorporar fotos profesionales y referencias de clientes cuando
-                                    cuenten con aprobación para su uso en el sitio.
-                                </p>
+
                             </div>
 
                             <div className="bg-white rounded-lg p-8 shadow-sm animate-slide-in-right">
-                                <h3 className="text-xl font-serif text-gray-900 mb-6">Agenda una evaluación</h3>
+                                <h3 className="text-xl font-serif text-gray-900 mb-6">Agendar evaluación</h3>
                                 <p className="text-gray-600 mb-6">
                                     Escríbenos y te orientamos sobre los pasos adecuados según el tipo de producto,
                                     empresa o establecimiento.

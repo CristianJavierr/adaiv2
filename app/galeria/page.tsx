@@ -23,24 +23,9 @@ const galleryImages: GalleryImage[] = [
         category: "Pasteles"
     },
     {
-        src: "/images/hero3.jpg",
-        alt: "Colaboradores",
-        category: "Equipo"
-    },
-    {
-        src: "/images/hero4.jpg",
-        alt: "Productos Adai",
-        category: "Productos"
-    },
-    {
         src: "/images/hero5.jpg",
         alt: "Donuts artesanales",
-        category: "Panadería"
-    },
-    {
-        src: "/images/aboutus.jpeg",
-        alt: "Colaboradores Adai Soluciones",
-        category: "Equipo"
+        category: "Repostería"
     },
     {
         src: "/images/products/cupcake.png",
@@ -61,6 +46,81 @@ const galleryImages: GalleryImage[] = [
         src: "/images/products/vainilla.png",
         alt: "Base para Pastel de Vainilla",
         category: "Productos"
+    },
+    {
+        src: "/images/products/cupcake-chocolate-clean-v2.png",
+        alt: "Cupcakes de Chocolate",
+        category: "Productos"
+    },
+    {
+        src: "/images/products/base-pastel-maiz-clean-v3.png",
+        alt: "Base Pastel de Maíz",
+        category: "Productos"
+    },
+    {
+        src: "/images/products/polvo-hornear-clean.png",
+        alt: "Polvo de Hornear",
+        category: "Productos"
+    },
+    {
+        src: "/images/products/base-pan-integral-clean-v2.png",
+        alt: "Base para Pan Integral",
+        category: "Productos"
+    },
+    {
+        src: "/images/team/_MG_9030.jpg",
+        alt: "Equipo de Trabajo Adai",
+        category: "Equipo"
+    },
+    {
+        src: "/images/team/_MG_9034.jpg",
+        alt: "Asesoría y Colaboración",
+        category: "Equipo"
+    },
+    {
+        src: "/images/team/_MG_9044.jpg",
+        alt: "Capacitación Técnica",
+        category: "Equipo"
+    },
+    {
+        src: "/images/team/_MG_9054.jpg",
+        alt: "Reunión del Equipo",
+        category: "Equipo"
+    },
+    {
+        src: "/images/team/_MG_9071.jpg",
+        alt: "Equipo Adai Soluciones",
+        category: "Equipo"
+    },
+    {
+        src: "/images/team/_MG_9076.jpg",
+        alt: "Compartiendo en Equipo",
+        category: "Equipo"
+    },
+    {
+        src: "/images/stock-reposteria-1.jpg",
+        alt: "Porción de Pastel de Chocolate",
+        category: "Repostería"
+    },
+    {
+        src: "/images/stock-reposteria-2.jpg",
+        alt: "Torre de Macarons Gourmet",
+        category: "Repostería"
+    },
+    {
+        src: "/images/stock-panaderia-1.jpg",
+        alt: "Cesta de Pan Artesanal",
+        category: "Panadería"
+    },
+    {
+        src: "/images/stock-panaderia-2.jpg",
+        alt: "Croissants Recién Horneados",
+        category: "Panadería"
+    },
+    {
+        src: "/images/hero3.jpg",
+        alt: "Colaboradores",
+        category: "Equipo"
     },
 ];
 
@@ -135,7 +195,7 @@ export default function GaleriaPage() {
                                     src={image.src}
                                     alt={image.alt}
                                     fill
-                                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                    className="object-cover object-top transition-transform duration-500 group-hover:scale-110"
                                 />
                                 {/* Overlay */}
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -143,9 +203,6 @@ export default function GaleriaPage() {
                                         <span className="inline-block px-3 py-1 bg-red-600 text-white text-xs font-medium rounded-full mb-2">
                                             {image.category}
                                         </span>
-                                        <h3 className="text-white text-lg font-semibold">
-                                            {image.alt}
-                                        </h3>
                                     </div>
                                 </div>
                                 {/* Zoom Icon */}
@@ -217,9 +274,6 @@ export default function GaleriaPage() {
                             <span className="inline-block px-4 py-1 bg-red-600 text-white text-sm font-medium rounded-full mb-2">
                                 {selectedImage.category}
                             </span>
-                            <h3 className="text-white text-xl font-semibold">
-                                {selectedImage.alt}
-                            </h3>
                         </div>
                     </div>
                 )}

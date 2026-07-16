@@ -1,7 +1,7 @@
 export interface Product {
     id: string;
     name: string;
-    category: "Panaderías" | "Reposterías" | "Pastelerías";
+    category: "Panaderías" | "Reposterías";
     image: string;
     description: string;
     longDescription: string;
@@ -48,8 +48,8 @@ export const products: Product[] = [
         id: "cupcake",
         name: "Adai Cupcake Vainilla",
         category: "Reposterías",
-        image: "/images/products/cupcake-bolsas-actualizada.png",
-        description: "Premezcla para cupcake de vainilla diseñada para prolongar la vida de anaquel, ahorrar huevos y componentes grasos.",
+        image: "/images/products/cupcake.png",
+        description: "Premezcla para elaborar cupcakes de forma fácil, ahorrando tiempo y componentes grasos.",
         longDescription: "La premezcla para cupcake de vainilla está diseñada para prolongar la vida de anaquel, ahorrar adición de huevos y componentes grasos. Está elaborada con materias primas de calidad para desarrollar un producto de sabor exquisito, miga suave y esponjosa.",
         features: [
             "Fácil preparación",
@@ -131,7 +131,7 @@ export const products: Product[] = [
         id: "base-pan-integral",
         name: "Adai Base para Pan Integral",
         category: "Panaderías",
-        image: "/images/products/base-bolsas-actualizada.png",
+        image: "/images/products/base-pan-integral-clean-v2.png",
         description: "Base para panes integrales de sabor ligeramente dulce, miga de color marrón natural y olor característico.",
         longDescription: "Base para panes integrales de sabor ligeramente dulce, miga de color marrón natural y olor característico.",
         features: [
@@ -161,7 +161,7 @@ export const products: Product[] = [
     {
         id: "basedonuts",
         name: "Adai Donuts (Base Concentrada)",
-        category: "Panaderías",
+        category: "Reposterías",
         image: "/images/products/basedonuts.png",
         description: "Base concentrada para elaborar donuts perfectos, esponjosos y de textura suave por más tiempo.",
         longDescription: "Nuestra base concentrada para elaborar donuts perfectos, esponjosos y de textura suave por más tiempo.",
@@ -201,9 +201,9 @@ export const products: Product[] = [
     {
         id: "vainilla",
         name: "Adai Base Concentrada Pastel Vainilla",
-        category: "Pastelerías",
-        image: "/images/products/base-bolsas-actualizada.png",
-        description: "Base concentrada sabor vainilla para pasteles, orientada a sabor exquisito, miga suave y vida útil prolongada.",
+        category: "Reposterías",
+        image: "/images/products/vainilla.png",
+        description: "Base Concentrada con sabor a vainilla natural, para elaborar pasteles de alto rendimiento.",
         longDescription: "La Base Concentrada sabor Vainilla para Pasteles proporciona al producto sabor exquisito, miga suave y esponjosa. Tiene como objetivo alargar la vida útil del producto, ahorrando huevos y componentes grasos.",
         features: [
             "Sabor premium a vainilla natural",
@@ -244,9 +244,9 @@ export const products: Product[] = [
     {
         id: "pastel-maiz",
         name: "Adai Base Pastel de Maíz",
-        category: "Pastelerías",
-        image: "/images/products/base-bolsas-actualizada.png",
-        description: "Base concentrada 1:10 de harina para pasteles de maíz, diseñada para ahorrar huevos y componentes grasos.",
+        category: "Reposterías",
+        image: "/images/products/base-pastel-maiz-clean-v3.png",
+        description: "Base Concentrada de maíz para elaborar pasteles y tortas de sabor y olor característico, ahorrando componentes grasos.",
         longDescription: "Base Concentrada (1:10 de harina) para Pasteles de Maíz, diseñada para ahorrar adición de huevos y componentes grasos, para desarrollar un producto de sabor exquisito.",
         features: [
             "Sabor tradicional a maíz",
@@ -276,8 +276,8 @@ export const products: Product[] = [
         id: "cupcake-chocolate",
         name: "Adai Cupcake Chocolate",
         category: "Reposterías",
-        image: "/images/products/cupcake-bolsas-actualizada.png",
-        description: "Premezcla para cupcake de chocolate diseñada para prolongar la vida de anaquel y ahorrar adición de huevos y componentes grasos.",
+        image: "/images/products/cupcake-chocolate-clean-v2.png",
+        description: "Premezcla para elaborar cupcakes de chocolate de forma fácil, ahorrando tiempo y componentes grasos.",
         longDescription: "Nuestra premezcla para cupcake de Chocolate está diseñada para prolongar la vida de anaquel, ahorrar adición de huevos y componentes grasos.",
         features: [
             "Fácil preparación",
@@ -313,8 +313,8 @@ export const products: Product[] = [
     {
         id: "polvo-hornear",
         name: "Adai Polvo de Hornear (Leudante doble acción)",
-        category: "Pastelerías",
-        image: "/images/products/vainilla.png",
+        category: "Reposterías",
+        image: "/images/products/polvo-hornear-clean.png",
         description: "Leudante de doble acción, con fórmula concentrada para productos de reposterías y pastelerías.",
         longDescription: "Leudante de doble acción, con fórmula concentrada para productos de reposterías y pastelerías.",
         features: [

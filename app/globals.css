@@ -169,6 +169,29 @@ body {
   transform: scale(1.05);
 }
 
+.gallery-reveal__mask {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: #fff;
+  will-change: transform;
+}
+
+.gallery-reveal__image {
+  will-change: transform;
+}
+
+/* GSAP controls the zoom directly; the generic hover transition would make it lag. */
+.image-zoom .gallery-reveal__image {
+  transition: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gallery-reveal__mask {
+    display: none;
+  }
+}
+
 /* Word-by-word title reveal, based on the clipped text treatment. */
 .title-reveal__word {
   display: inline-block;
