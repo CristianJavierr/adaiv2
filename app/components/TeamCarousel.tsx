@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { useRef } from "react";
 
 const teamMembers = [
   { src: "/images/team/_MG_9030.jpg", name: "Jorge Luis Rodríguez Mármol" },
@@ -11,18 +10,9 @@ const teamMembers = [
 ];
 
 export default function TeamCarousel() {
-  const trackRef = useRef<HTMLDivElement>(null);
-
-  const move = (direction: 1 | -1) => {
-    const track = trackRef.current;
-    if (!track) return;
-
-    track.scrollBy({ left: direction * track.clientWidth * 0.78, behavior: "smooth" });
-  };
-
   return (
     <div className="relative">
-      <div ref={trackRef} className="flex gap-5 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-3" aria-label="Miembros del equipo Adai">
+      <div className="flex gap-5 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-3" aria-label="Miembros del equipo Adai">
         {teamMembers.map(({ src, name }, index) => (
           <figure key={src} className="w-[82%] shrink-0 snap-start sm:w-[45%] lg:w-[calc(25%_-_15px)]">
             <div className={`relative aspect-[4/5] overflow-hidden bg-gray-50 ${index % 2 === 0 ? "rounded-tr-[100px] rounded-bl-[100px]" : "rounded-tl-[100px] rounded-br-[100px]"}`}>
@@ -31,15 +21,6 @@ export default function TeamCarousel() {
             <figcaption className="mt-4 text-center text-base font-light tracking-[0.01em] text-gray-700 md:text-lg">{name}</figcaption>
           </figure>
         ))}
-      </div>
-
-      <div className="mt-6 flex justify-center gap-3">
-        <button type="button" onClick={() => move(-1)} className="team-carousel-control" aria-label="Ver miembro anterior">
-          <span aria-hidden="true">←</span>
-        </button>
-        <button type="button" onClick={() => move(1)} className="team-carousel-control" aria-label="Ver siguiente miembro">
-          <span aria-hidden="true">→</span>
-        </button>
       </div>
     </div>
   );
