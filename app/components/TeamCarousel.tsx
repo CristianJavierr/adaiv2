@@ -16,7 +16,13 @@ export default function TeamCarousel() {
         {teamMembers.map(({ src, name }, index) => (
           <figure key={src} className="w-[82%] shrink-0 snap-start sm:w-[45%] lg:w-[calc(25%_-_15px)]">
             <div className={`relative aspect-[4/5] overflow-hidden bg-gray-50 ${index % 2 === 0 ? "rounded-tr-[100px] rounded-bl-[100px]" : "rounded-tl-[100px] rounded-br-[100px]"}`}>
-              <Image src={src} alt={name} fill className="object-cover object-top" sizes="(max-width: 640px) 82vw, (max-width: 1024px) 45vw, 25vw" />
+              <Image
+                src={src}
+                alt={name}
+                fill
+                className={`object-cover object-top ${index === 0 ? "origin-top scale-[1.50]" : ""}`}
+                sizes="(max-width: 640px) 82vw, (max-width: 1024px) 45vw, 25vw"
+              />
             </div>
             <figcaption className="mt-4 text-center text-base font-light tracking-[0.01em] text-gray-700 md:text-lg">{name}</figcaption>
           </figure>
