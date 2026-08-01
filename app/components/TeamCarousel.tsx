@@ -3,9 +3,9 @@
 import Image from "next/image";
 
 const teamMembers = [
-  { src: "/images/team/_MG_9030.jpg", name: "Jorge Luis Rodríguez Mármol" },
   { src: "/images/team/_MG_9076.jpg", name: "Aylin Grullón Báez" },
   { src: "/images/team/_MG_9044.jpg", name: "Josefina Báez Hernández" },
+  { src: "/images/team/_MG_9030.jpg", name: "Jorge Luis Rodríguez Mármol" },
   { src: "/images/team/_MG_9054.jpg", name: "Alina de Jesús Báez Hernández" },
 ];
 
@@ -20,7 +20,7 @@ export default function TeamCarousel() {
                 src={src}
                 alt={name}
                 fill
-                className={`object-cover object-top ${index === 0 ? "origin-top scale-[1.50]" : ""}`}
+                className={`object-cover object-top ${src === "/images/team/_MG_9030.jpg" ? "origin-top scale-[1.50]" : ""}`}
                 sizes="(max-width: 640px) 82vw, (max-width: 1024px) 45vw, 25vw"
               />
             </div>

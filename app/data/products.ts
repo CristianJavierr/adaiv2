@@ -255,7 +255,7 @@ export const products: Product[] = [
             "Resultados uniformes"
         ],
         usage: "Mezclar con los ingredientes líquidos indicados, batir hasta integrar y hornear según el tamaño del molde.",
-        presentation: "Consultar disponibilidad",
+        presentation: "Fundas de 5 lb y 50 lb",
         technicalSheet: {
             subtitle: "Adai Base Pastel de Maíz",
             characteristics: "Base concentrada (1:10 de harina) para Pasteles de Maíz, diseñada para ahorrar adición de huevos y componentes grasos, para desarrollar un producto de sabor exquisito.",
@@ -324,7 +324,7 @@ export const products: Product[] = [
             "Aporta suavidad y esponjosidad"
         ],
         usage: "Usar 0.5-1% para galletas, 1.5-2% para donas y 2-3% para pasteles. Dejar la mezcla en reposo por 30-60 minutos antes de entrar al horno.",
-        presentation: "Consultar disponibilidad",
+        presentation: "Fundas de 5 lb y 50 lb",
         technicalSheet: {
             subtitle: "Polvo de Hornear Doble Acción ADAI",
             characteristics: "Libera gas al mezclarse con líquidos y nuevamente con el calor del horno, lo que ayuda a obtener una mejor textura y esponjosidad.",

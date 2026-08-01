@@ -2,12 +2,25 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { products } from "../data/products";
 
 export default function ProductsCarousel() {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const itemsPerView = 3; // Productos visibles a la vez
+    const [itemsPerView, setItemsPerView] = useState(1);
+
+    useEffect(() => {
+        const mediaQuery = window.matchMedia("(min-width: 768px)");
+        const updateItemsPerView = () => setItemsPerView(mediaQuery.matches ? 3 : 1);
+        updateItemsPerView();
+        mediaQuery.addEventListener("change", updateItemsPerView);
+        return () => mediaQuery.removeEventListener("change", updateItemsPerView);
+    }, []);
+
+    useEffect(() => {
+        setCurrentIndex((prev) => Math.min(prev, Math.max(0, products.length - itemsPerView)));
+    }, [itemsPerView]);
+
     const maxIndex = Math.max(0, products.length - itemsPerView); // Índice máximo para evitar espacios vacíos
 
     const goToSlide = (index: number) => {

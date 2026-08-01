@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Dancing_Script } from "next/font/google";
+import ScrollTriggerRefresh from "./components/ScrollTriggerRefresh";
 import "./globals.css";
 
 const inter = Inter({
@@ -25,6 +26,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={`${inter.variable} ${dancingScript.variable} font-sans antialiased`}>
+        <ScrollTriggerRefresh />
         {children}
       </body>
     </html>

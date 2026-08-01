@@ -18,26 +18,39 @@ export default function TitleReveal({ children, className = "", as: Tag = "h2" }
     gsap.registerPlugin(ScrollTrigger);
 
     const title = titleRef.current;
-    if (!title || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    if (!title) return;
 
     const characterElements = title.querySelectorAll<HTMLElement>(".title-reveal__character");
+    gsap.killTweensOf(characterElements);
+    gsap.set(characterElements, { clearProps: "transform,clipPath" });
+
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
     const context = gsap.context(() => {
-      gsap.set(characterElements, { yPercent: 110, clipPath: "inset(0% 0% 100% 0%)" });
-      gsap.to(characterElements, {
-        yPercent: 0,
-        clipPath: "inset(0% 0% 0% 0%)",
-        duration: 0.65,
-        ease: "power2.out",
-        stagger: { each: 0.015, ease: "power2.inOut" },
-        scrollTrigger: {
-          trigger: title,
-          start: "top 88%",
-          once: true,
+      gsap.fromTo(
+        characterElements,
+        { yPercent: 110, clipPath: "inset(0% 0% 100% 0%)" },
+        {
+          yPercent: 0,
+          clipPath: "inset(0% 0% 0% 0%)",
+          duration: 0.65,
+          ease: "power2.out",
+          stagger: { each: 0.015, ease: "power2.inOut" },
+          overwrite: "auto",
+          scrollTrigger: {
+            trigger: title,
+            start: "top 88%",
+            once: true,
+          },
         },
-      });
+      );
     }, title);
 
-    return () => context.revert();
+    return () => {
+      context.revert();
+      gsap.killTweensOf(characterElements);
+      gsap.set(characterElements, { clearProps: "transform,clipPath" });
+    };
   }, []);
 
   return (

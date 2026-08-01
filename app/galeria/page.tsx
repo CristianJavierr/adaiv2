@@ -20,12 +20,12 @@ const galleryImages: GalleryImage[] = [
     {
         src: "/images/hero2.jpg",
         alt: "Pastel artesanal",
-        category: "Pasteles"
+        category: "Pastelería"
     },
     {
         src: "/images/hero5.jpg",
         alt: "Donuts artesanales",
-        category: "Repostería"
+        category: "Pastelería"
     },
     {
         src: "/images/products/cupcake.png",
@@ -105,7 +105,7 @@ const galleryImages: GalleryImage[] = [
     {
         src: "/images/stock-reposteria-2.jpg",
         alt: "Torre de Macarons Gourmet",
-        category: "Repostería"
+        category: "Pastelería"
     },
     {
         src: "/images/stock-panaderia-1.jpg",
@@ -124,7 +124,7 @@ const galleryImages: GalleryImage[] = [
     },
 ];
 
-const categories = ["Todos", "Repostería", "Pasteles", "Panadería", "Productos", "Equipo"];
+const categories = ["Todos", "Repostería", "Pastelería", "Panadería", "Productos", "Equipo"];
 
 export default function GaleriaPage() {
     const [selectedCategory, setSelectedCategory] = useState("Todos");

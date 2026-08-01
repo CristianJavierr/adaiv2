@@ -17,13 +17,19 @@ export default function MaskTextReveal({ children, className = "" }: MaskTextRev
     gsap.registerPlugin(ScrollTrigger, SplitText);
 
     const text = textRef.current;
-    if (!text || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    if (!text) return;
+
+    gsap.killTweensOf(text);
+    gsap.set(text, { clearProps: "opacity,visibility" });
+
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
     const content = text.querySelector<HTMLElement>(".mask-text-reveal__content");
     if (!content) return;
 
+    let split: SplitText | undefined;
     const context = gsap.context(() => {
-      const split = new SplitText(content, {
+      split = new SplitText(content, {
         type: "lines,chars",
         linesClass: "mask-text-reveal__line",
         charsClass: "mask-text-reveal__character",
@@ -43,11 +49,14 @@ export default function MaskTextReveal({ children, className = "" }: MaskTextRev
       timeline
         .to(text, { autoAlpha: 1, duration: 1.25, ease: "power3.out" }, 0)
         .to(characters, { yPercent: 0, duration: 1.2, ease: "power3.out" }, 0.08);
-
-      return () => split.revert();
     }, text);
 
-    return () => context.revert();
+    return () => {
+      context.revert();
+      split?.revert();
+      gsap.killTweensOf(text);
+      gsap.set(text, { clearProps: "opacity,visibility" });
+    };
   }, []);
 
   return (
