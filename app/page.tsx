@@ -104,7 +104,7 @@ export default function Home() {
           <div className="text-center mb-12">
             <MaskTextReveal className="text-sm text-gray-500 mb-2">Acerca de nosotros</MaskTextReveal>
             <TitleReveal className="text-3xl md:text-4xl font-serif text-gray-900 mb-12">
-              Por qué elegir Adai
+              Por qué elegir ADAI
             </TitleReveal>
           </div>
 
@@ -112,8 +112,8 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Column - Text Content */}
             <div className="space-y-6">
-                <MaskTextReveal className="text-gray-700 leading-relaxed">
-                  En Adai Soluciones, S.R.L. ofrecemos soluciones e ingredientes de alta calidad para panaderías, reposterías, pastelerías y negocios alimentarios, combinando insumos confiables con asesoría estratégica para mejorar procesos e impulsar el crecimiento de nuestros aliados. Nuestro enfoque está en brindar herramientas prácticas que permitan producir con mayor eficiencia y calidad.
+                <MaskTextReveal className="text-gray-700 leading-relaxed text-justify">
+                  Elevamos el estándar de la producción pastelera y panadera. Ofrecemos un catálogo integral de ingredientes confiables y consultoría especializada para negocios alimentarios. Brindamos herramientas prácticas, acompañamiento técnico para reducir costos, disminuir tiempo de procesos y que ofrezcan productos excepcionales a sus clientes.
                 </MaskTextReveal>
 
 

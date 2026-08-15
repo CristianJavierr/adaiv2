@@ -48,9 +48,9 @@ export const products: Product[] = [
         id: "cupcake",
         name: "Adai Cupcake Vainilla",
         category: "Reposterías",
-        image: "/images/products/cupcake.png",
-        description: "Premezcla para elaborar cupcakes de forma fácil, ahorrando tiempo y componentes grasos.",
-        longDescription: "La premezcla para cupcake de vainilla está diseñada para prolongar la vida de anaquel, ahorrar adición de huevos y componentes grasos. Está elaborada con materias primas de calidad para desarrollar un producto de sabor exquisito, miga suave y esponjosa.",
+        image: "/images/products/cupcake-vainilla-actualizado.png",
+        description: "Premezcla para elaborar cupcakes de exquisito sabor a vainilla natural, de forma práctica y con mínima adición de ingredientes.",
+        longDescription: "Premezcla para elaborar cupcakes de exquisito sabor a vainilla natural, de forma práctica y con mínima adición de ingredientes.",
         features: [
             "Fácil preparación",
             "Sabor a vainilla natural",
@@ -58,7 +58,7 @@ export const products: Product[] = [
             "Resultados consistentes",
             "Reduce tiempo de elaboración"
         ],
-        usage: "Batir huevos, adicionar aceite, agregar Cupcake Vainilla Adai, incorporar agua, mezclar, verter en moldes y hornear a 165°C/330°F por 20 minutos aproximados.",
+        usage: "Mezclar con líquidos (huevos, aceite y agua) batir por 3-5 minutos y hornear a 165°C/330°F por 18-22 minutos.",
         presentation: "Fundas de 5 lb y 50 lb",
         technicalSheet: {
             composition: "Harina de Trigo, Azúcar, Suero de Leche, Sal, Goma Xantán, Pirofosfato de Sodio, Bicarbonato de Sodio, Almidón de Maíz, Mono y Diglicéridos de Ácidos Grasos, Almidón de Maíz Modificado, Sabor Natural de Vainilla y Fosfato Monocálcico Monohidratado.",
@@ -88,7 +88,7 @@ export const products: Product[] = [
         id: "mejorante",
         name: "Adai Mejorante de Pan",
         category: "Panaderías",
-        image: "/images/products/mejorante.png",
+        image: "/images/products/mejorante-de-pan-actualizado.png",
         description: "Mejorador de harinas para panificación, diseñado para todo tipo de panes.",
         longDescription: "Es un mejorador de harinas para panificación, diseñado para todo tipo de panes, asegura homogeneidad de miga, volumen, color y aroma deseado en el producto final.",
         features: [
@@ -131,7 +131,7 @@ export const products: Product[] = [
         id: "base-pan-integral",
         name: "Adai Base para Pan Integral",
         category: "Panaderías",
-        image: "/images/products/base-pan-integral-clean-v2.png",
+        image: "/images/products/base-para-pan-integral-actualizada.png",
         description: "Base para panes integrales de sabor ligeramente dulce, miga de color marrón natural y olor característico.",
         longDescription: "Base para panes integrales de sabor ligeramente dulce, miga de color marrón natural y olor característico.",
         features: [
@@ -162,7 +162,7 @@ export const products: Product[] = [
         id: "basedonuts",
         name: "Adai Donuts (Base Concentrada)",
         category: "Reposterías",
-        image: "/images/products/basedonuts.png",
+        image: "/images/products/base-concentrada-donuts-actualizada.png",
         description: "Base concentrada para elaborar donuts perfectos, esponjosos y de textura suave por más tiempo.",
         longDescription: "Nuestra base concentrada para elaborar donuts perfectos, esponjosos y de textura suave por más tiempo.",
         features: [
@@ -171,7 +171,7 @@ export const products: Product[] = [
             "Mayor durabilidad del producto",
             "Resultados consistentes"
         ],
-        usage: "Mezclar con harina panadera, margarina sin sal, levadura instantánea y agua helada hasta lograr una masa homogénea. Reposar, laminar, formar, fermentar, freír y decorar al gusto.",
+        usage: "Mezclar con harina panadera, margarina sin sal, levadura instantánea y agua helada hasta lograr una masa homogénea y luego dejar reposar, laminar, formar los donuts, fermentar, freír y decorar al gusto.",
         presentation: "Fundas de 5 lb y 50 lb",
         technicalSheet: {
             composition: "Azúcar, Suero de Leche, Harina de Soya, Sal, Mono y Diglicéridos de Ácidos Grasos, Pirofosfato de Sodio, Sabor natural de Vainilla, Bicarbonato de Sodio, Almidón de Maíz y Fosfato Monocálcico Monohidratado.",
@@ -202,17 +202,16 @@ export const products: Product[] = [
         id: "vainilla",
         name: "Adai Base Concentrada Pastel Vainilla",
         category: "Reposterías",
-        image: "/images/products/vainilla.png",
-        description: "Base Concentrada con sabor a vainilla natural, para elaborar pasteles de alto rendimiento.",
-        longDescription: "La Base Concentrada sabor Vainilla para Pasteles proporciona al producto sabor exquisito, miga suave y esponjosa. Tiene como objetivo alargar la vida útil del producto, ahorrando huevos y componentes grasos.",
+        image: "/images/products/base-concentrada-pastel-vainilla-actualizada.png",
+        description: "Base Concentrada sabor Vainilla para Pasteles, de sabor exquisito a vainilla natural, miga suave y esponjosa. Tiene como objetivo alargar la vida útil del producto, ahorrando huevos y componentes grasos.",
+        longDescription: "Base Concentrada sabor Vainilla para Pasteles, de sabor exquisito a vainilla natural, miga suave y esponjosa. Tiene como objetivo alargar la vida útil del producto, ahorrando huevos y componentes grasos.",
         features: [
-            "Sabor premium a vainilla natural",
-            "Miga húmeda y esponjosa",
-            "Fácil preparación",
-            "Ideal para decoración",
+            "Mayor rendimiento",
+            "Sabor a vainilla natural",
+            "Miga esponjosa y firme ideal para decoración",
             "Resultados consistentes"
         ],
-        usage: "Batir huevos, adicionar aceite, incorporar ingredientes secos con Adai Base Concentrada Pastel Vainilla, agregar agua, mezclar, verter en moldes y hornear a 165°C/330°F.",
+        usage: "Batir huevos, adicionar aceite, incorporar ingredientes secos con Adai Base Concentrada Pastel Vainilla, luego agregar agua, mezclar, verter en moldes y hornear a 165°C/330°F por 25-30 minutos.",
         presentation: "Fundas de 5 lb y 50 lb",
         technicalSheet: {
             composition: "Azúcar, Suero de Leche, Sal, Harina de Trigo, Almidón de Maíz Modificado, Mono y Diglicéridos de Ácidos Grasos, Almidón de Maíz, Goma Xantán y Sabor Natural de Vainilla.",
@@ -245,16 +244,16 @@ export const products: Product[] = [
         id: "pastel-maiz",
         name: "Adai Base Pastel de Maíz",
         category: "Reposterías",
-        image: "/images/products/base-pastel-maiz-clean-v3.png",
-        description: "Base Concentrada de maíz para elaborar pasteles y tortas de sabor y olor característico, ahorrando componentes grasos.",
-        longDescription: "Base Concentrada (1:10 de harina) para Pasteles de Maíz, diseñada para ahorrar adición de huevos y componentes grasos, para desarrollar un producto de sabor exquisito.",
+        image: "/images/products/base-pastel-maiz-actualizada.png",
+        description: "Base Concentrada para Pasteles con auténtico sabor tradicional a maíz.",
+        longDescription: "Base Concentrada para Pasteles con auténtico sabor tradicional a maíz.",
         features: [
             "Sabor tradicional a maíz",
             "Textura suave",
             "Fácil preparación",
             "Resultados uniformes"
         ],
-        usage: "Mezclar con los ingredientes líquidos indicados, batir hasta integrar y hornear según el tamaño del molde.",
+        usage: "Batir huevos, adicionar aceite, incorporar ingredientes secos con Adai Base Pastel Maíz, luego agregar agua, mezclar, verter en moldes y hornear a 180°C/350°F por 40-50",
         presentation: "Fundas de 5 lb y 50 lb",
         technicalSheet: {
             subtitle: "Adai Base Pastel de Maíz",
@@ -276,17 +275,17 @@ export const products: Product[] = [
         id: "cupcake-chocolate",
         name: "Adai Cupcake Chocolate",
         category: "Reposterías",
-        image: "/images/products/cupcake-chocolate-clean-v2.png",
-        description: "Premezcla para elaborar cupcakes de chocolate de forma fácil, ahorrando tiempo y componentes grasos.",
-        longDescription: "Nuestra premezcla para cupcake de Chocolate está diseñada para prolongar la vida de anaquel, ahorrar adición de huevos y componentes grasos.",
+        image: "/images/products/cupcake-chocolate-actualizado.png",
+        description: "Premezcla para elaborar de forma práctica, cupcakes de exquisito sabor al chocolate dominicano y con mínima adición de ingredientes.",
+        longDescription: "Premezcla para elaborar de forma práctica, cupcakes de exquisito sabor al chocolate dominicano y con mínima adición de ingredientes.",
         features: [
             "Fácil preparación",
             "Sabor exquisito del Cacao Dominicano",
-            "Textura esponjosa",
+            "Textura esponjosa y suave",
             "Resultados consistentes",
             "Reduce tiempo de elaboración"
         ],
-        usage: "Mezclar con líquidos (huevos, aceite y agua) batir por 3-5 minutos y hornear a 180°C por 18-22 minutos.",
+        usage: "Mezclar con líquidos (huevos, aceite y agua) batir por 3-5 minutos y hornear a 180°C/356°F por 18-22 minutos.",
         presentation: "Fundas de 5 lb y 50 lb",
         technicalSheet: {
             subtitle: "ADAI Cupcake Chocolate",
@@ -314,7 +313,7 @@ export const products: Product[] = [
         id: "polvo-hornear",
         name: "Adai Polvo de Hornear (Leudante doble acción)",
         category: "Reposterías",
-        image: "/images/products/polvo-hornear-clean.png",
+        image: "/images/products/polvo-de-hornear-actualizado.png",
         description: "Leudante de doble acción, con fórmula concentrada para productos de reposterías y pastelerías.",
         longDescription: "Leudante de doble acción, con fórmula concentrada para productos de reposterías y pastelerías.",
         features: [

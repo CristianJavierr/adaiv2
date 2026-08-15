@@ -15,7 +15,7 @@ export default function ProductosPage() {
                 <section
                     className="py-16 relative"
                     style={{
-                        backgroundImage: 'url(/images/bkimage3.png)',
+                        backgroundImage: 'url(/images/hero-productos.png)',
                         backgroundRepeat: 'repeat',
                         backgroundSize: '400px',
                     }}
@@ -109,7 +109,7 @@ export default function ProductosPage() {
                             ¿Necesita más información?
                         </h2>
                         <p className="text-gray-600 mb-8 max-w-xl mx-auto">
-                            Contáctenos para conocer más sobre nuestros productos y cómo pueden ayudar a su empresa.
+                            Contáctenos para conocer más sobre nuestros productos y cómo pueden apoyar a su empresa.
                         </p>
                         <Link
                             href="/contacto"

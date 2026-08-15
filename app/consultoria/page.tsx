@@ -41,9 +41,9 @@ export default function ConsultoriaPage() {
                 <section
                     className="py-16 relative"
                     style={{
-                        backgroundImage: "url(/images/bkimage4.png)",
+                        backgroundImage: "url(/images/hero-galeria.png)",
                         backgroundRepeat: "repeat",
-                        backgroundSize: "520px",
+                        backgroundSize: "467px",
                     }}
                 >
                     <div className="absolute inset-0 bg-white/85"></div>
@@ -56,7 +56,7 @@ export default function ConsultoriaPage() {
                                 <h1 className="text-4xl md:text-5xl font-serif text-gray-900 mb-5">
                                     Servicios para formalizar y fortalecer su empresa
                                 </h1>
-                                <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                                <p className="text-lg text-gray-700 leading-relaxed mb-8 text-justify">
                                     Acompañamos a emprendedores de las área de alimentos, farmacéutica y químicos
                                     en los procesos de certificaciones, registros, licencias y habilitaciones por las
                                     distintas instituciones de la República Dominicana.
@@ -146,7 +146,7 @@ export default function ConsultoriaPage() {
                                 <h2 className="text-3xl md:text-4xl font-serif text-gray-900 mb-5">
                                     Procesos claros para decisiones seguras
                                 </h2>
-                                <p className="text-gray-700 leading-relaxed mb-6">
+                                <p className="text-gray-700 leading-relaxed mb-6 text-justify">
                                     Trabajamos con una revisión inicial de necesidades, levantamiento de requisitos,
                                     preparación documental y seguimiento del proceso correspondiente.
                                 </p>
@@ -156,8 +156,8 @@ export default function ConsultoriaPage() {
                             <div className="bg-white rounded-lg p-8 shadow-sm animate-slide-in-right">
                                 <h3 className="text-xl font-serif text-gray-900 mb-6">Agendar evaluación</h3>
                                 <p className="text-gray-600 mb-6">
-                                    Escríbenos y te orientamos sobre los pasos adecuados según el tipo de producto,
-                                    empresa o establecimiento.
+                                    Escríbanos y les orientamos sobre los pasos adecuados según el tipo de empresa,
+                                    producto o servicio requerido.
                                 </p>
                                 <div className="flex flex-wrap gap-4">
                                     <Link

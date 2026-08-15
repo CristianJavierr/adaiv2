@@ -12,9 +12,9 @@ export default function QuienesSomos() {
                 <section
                     className="py-16 relative"
                     style={{
-                        backgroundImage: 'url(/images/bkimage2.png)',
+                        backgroundImage: 'url(/images/hero-galeria.png)',
                         backgroundRepeat: 'repeat',
-                        backgroundSize: '600px',
+                        backgroundSize: '467px',
                     }}
                 >
                     {/* Overlay for better text readability */}
@@ -25,7 +25,7 @@ export default function QuienesSomos() {
                             Quiénes Somos
                         </h1>
                         <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-                            Una empresa familiar nacida de la fe, la perseverancia y el amor por las soluciones
+                            Adai Soluciones nació de la experiencia, la fe y el compromiso familiar.
                         </p>
                     </div>
                 </section>
@@ -50,17 +50,11 @@ export default function QuienesSomos() {
                             <h2 className="text-3xl md:text-4xl font-serif text-gray-900 mb-4">
                                 La Historia detrás de Adai Soluciones
                             </h2>
-                            <p className="text-gray-700 leading-relaxed">
-                                Durante más de una década, combiné roles gerenciales, acumulando conocimientos y responsabilidades.
+                            <p className="text-gray-700 leading-relaxed text-justify">
+                                Durante más de una década en roles gerenciales, desarrollamos conocimientos y habilidades para emprender, creando soluciones duraderas en la industria alimentaria. El nombre y nuestro logo en forma de tulipán integran las iniciales de la familia, representando la apertura, disciplina, agilidad e integridad que guían nuestra trayectoria.
                             </p>
-                            <p className="text-gray-700 leading-relaxed">
-                                Como una inspiración surge la marca formada con las iniciales de mis hijos y la mía; el tulipán se dibuja iniciando con la A de Adai y la S de Soluciones, así surgió el nombre comercial.
-                            </p>
-                            <p className="text-gray-700 leading-relaxed">
-                                Por decisión de vida y fe, renuncié a tres empleos y con el apoyo de la familia, habilitamos el local, desarrollamos productos y servicios, registramos la empresa, e iniciamos demostraciones en las panaderías y reposterías.
-                            </p>
-                            <p className="text-gray-700 leading-relaxed italic font-medium">
-                                Hoy mantenemos la certeza de que, para quien cree, toda obra para bien y que ante situaciones extremas deben generarse soluciones duraderas.
+                            <p className="text-gray-700 leading-relaxed text-justify">
+                                Hoy acompañamos a panaderías y reposterías combinando insumos de alta calidad con asesoría técnica especializada para hacer crecer sus negocios, consolidando así nuestro compromiso con el sector.
                             </p>
                         </div>
                     </div>
@@ -109,11 +103,8 @@ export default function QuienesSomos() {
                                 </svg>
                             </div>
                             <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">Misión</h3>
-                            <p className="text-gray-700 leading-relaxed text-center text-sm">
-                                Ofrecemos soluciones con productos concentrados, inocuos, deliciosos, a costo
-                                competitivo, agregando valor por el soporte técnico para la elaboración de
-                                exquisitos panes, pasteles y donas; además capacitamos a nuestros clientes en
-                                el cumplimiento de estándares de calidad y normativas nacionales e internacionales.
+                            <p className="text-gray-700 leading-relaxed text-justify text-sm">
+                                Impulsamos la excelencia en la industria alimentaria ofreciendo ingredientes y soluciones concentradas, inocuas y deliciosas a un costo competitivo. Agregamos valor mediante soporte técnico especializado para la creación de panes, pasteles y donas excepcionales, y capacitamos a nuestros clientes para garantizar el cumplimiento de estándares de calidad y normativas nacionales e internacionales.
                             </p>
                         </div>
 
@@ -141,10 +132,8 @@ export default function QuienesSomos() {
                                 </svg>
                             </div>
                             <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">Visión</h3>
-                            <p className="text-gray-700 leading-relaxed text-center text-sm">
-                                Posicionarnos entre las principales industrias de la República Dominicana en
-                                proveer productos alimenticios y servicios de capacitación al personal de las
-                                áreas de alimentos, medicamentos, cosméticos e higiene.
+                            <p className="text-gray-700 leading-relaxed text-justify text-sm">
+                                Consolidarnos como una de las empresas líderes en la República Dominicana en el suministro de productos alimenticios y servicios de capacitación de alto nivel para los sectores de alimentos, medicamentos, cosméticos e higiene.
                             </p>
                         </div>
 
@@ -167,9 +156,8 @@ export default function QuienesSomos() {
                                 </svg>
                             </div>
                             <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">Política de Calidad</h3>
-                            <p className="text-gray-700 leading-relaxed text-center text-sm">
-                                Proveer productos y servicios de satisfacción a nuestros clientes, en cumplimiento
-                                de las regulaciones nacionales e internacionales.
+                            <p className="text-gray-700 leading-relaxed text-justify text-sm">
+                                Garantizamos la satisfacción total de nuestros clientes a través de productos y servicios confiables, estrictamente alineados con las regulaciones nacionales e internacionales.
                             </p>
                         </div>
                     </div>
@@ -194,18 +182,18 @@ export default function QuienesSomos() {
                             </div>
                             <h3 className="text-lg font-semibold text-gray-900 mb-3">Apertura</h3>
                             <p className="text-gray-600 text-sm leading-relaxed">
-                                Antes temas de interés de nuestros colaboradores y clientes, para juntos buscar soluciones.
+                                Ante temas de interés de nuestros colaboradores y clientes, para juntos construir soluciones.
                             </p>
                         </div>
 
                         {/* Disciplina */}
                         <div className="text-center p-6 animate-fade-in-up delay-200">
-                            <div className="w-20 h-20 bg-[#1d4f91] rounded-tr-[30px] rounded-bl-[30px] flex items-center justify-center mb-6 mx-auto hover-lift">
+                            <div className="w-20 h-20 bg-[#1d4f91] rounded-tl-[30px] rounded-br-[30px] flex items-center justify-center mb-6 mx-auto hover-lift">
                                 <span className="text-3xl font-bold text-white">D</span>
                             </div>
                             <h3 className="text-lg font-semibold text-gray-900 mb-3">Disciplina</h3>
                             <p className="text-gray-600 text-sm leading-relaxed">
-                                Dispuestos al constante crecimiento personal y corporativo en favor de la sociedad.
+                                Dispuestos al constante crecimiento personal y corporativo en beneficio de la sociedad.
                             </p>
                         </div>
 
@@ -222,7 +210,7 @@ export default function QuienesSomos() {
 
                         {/* Integridad */}
                         <div className="text-center p-6 animate-fade-in-up delay-400">
-                            <div className="w-20 h-20 bg-[#1d4f91] rounded-tr-[30px] rounded-bl-[30px] flex items-center justify-center mb-6 mx-auto hover-lift">
+                            <div className="w-20 h-20 bg-[#1d4f91] rounded-tl-[30px] rounded-br-[30px] flex items-center justify-center mb-6 mx-auto hover-lift">
                                 <span className="text-3xl font-bold text-white">I</span>
                             </div>
                             <h3 className="text-lg font-semibold text-gray-900 mb-3">Integridad</h3>

@@ -9,6 +9,7 @@ interface GalleryImage {
     src: string;
     alt: string;
     category: string;
+    lightboxCropBottom?: number;
 }
 
 const galleryImages: GalleryImage[] = [
@@ -16,6 +17,62 @@ const galleryImages: GalleryImage[] = [
         src: "/images/hero1.jpg",
         alt: "Cupcakes decorados",
         category: "Repostería"
+    },
+    {
+        src: "/images/pasteleria/preparacion-merengues-artesanales.jpg",
+        alt: "Preparación de merengues artesanales",
+        category: "Pastelería"
+    },
+    {
+        src: "/images/pasteleria/decoracion-choux-con-crema.jpg",
+        alt: "Decoración de choux con crema",
+        category: "Pastelería"
+    },
+    {
+        src: "/images/pasteleria/galletas-artesanales-en-bandeja.jpg",
+        alt: "Galletas artesanales en bandeja",
+        category: "Pastelería"
+    },
+    {
+        src: "/images/pasteleria/galletas-de-chocolate-recien-horneadas.jpg",
+        alt: "Galletas de chocolate recién horneadas",
+        category: "Pastelería"
+    },
+    {
+        src: "/images/pasteleria/decoracion-de-tartaletas-con-frutas.jpg",
+        alt: "Decoración de tartaletas con frutas",
+        category: "Pastelería"
+    },
+    {
+        src: "/images/pasteleria/vitrina-de-galletas-artesanales.jpg",
+        alt: "Vitrina de galletas artesanales",
+        category: "Pastelería"
+    },
+    {
+        src: "/images/pasteleria/pastel-marmoleado-con-avellanas.jpg",
+        alt: "Pastel marmoleado con avellanas",
+        category: "Pastelería"
+    },
+    {
+        src: "/images/panaderia/vitrina-de-panes-y-croissants-artesanales.jpg",
+        alt: "Vitrina de panes y croissants artesanales",
+        category: "Panadería"
+    },
+    {
+        src: "/images/panaderia/panes-artesanales-recien-horneados.jpg",
+        alt: "Panes artesanales recién horneados",
+        category: "Panadería"
+    },
+    {
+        src: "/images/panaderia/pan-artesanal-en-rebanadas.jpg",
+        alt: "Pan artesanal en rebanadas",
+        category: "Panadería"
+    },
+    {
+        src: "/images/panaderia/baguettes-artesanales.jpg",
+        alt: "Baguettes artesanales",
+        category: "Panadería",
+        lightboxCropBottom: 10
     },
     {
         src: "/images/hero2.jpg",
@@ -28,49 +85,50 @@ const galleryImages: GalleryImage[] = [
         category: "Pastelería"
     },
     {
-        src: "/images/products/cupcake.png",
+        src: "/images/products/cupcake-vainilla-actualizado.png",
         alt: "Premezcla para Cupcake",
         category: "Productos"
     },
     {
-        src: "/images/products/mejorante.png",
+        src: "/images/products/mejorante-de-pan-actualizado.png",
         alt: "Mejorante para pan",
         category: "Productos"
     },
     {
-        src: "/images/products/basedonuts.png",
+        src: "/images/products/base-concentrada-donuts-actualizada.png",
         alt: "Base para Donuts",
         category: "Productos"
     },
     {
-        src: "/images/products/vainilla.png",
+        src: "/images/products/base-concentrada-pastel-vainilla-actualizada.png",
         alt: "Base para Pastel de Vainilla",
         category: "Productos"
     },
     {
-        src: "/images/products/cupcake-chocolate-clean-v2.png",
+        src: "/images/products/cupcake-chocolate-actualizado.png",
         alt: "Cupcakes de Chocolate",
         category: "Productos"
     },
     {
-        src: "/images/products/base-pastel-maiz-clean-v3.png",
+        src: "/images/products/base-pastel-maiz-actualizada.png",
         alt: "Base Pastel de Maíz",
         category: "Productos"
     },
     {
-        src: "/images/products/polvo-hornear-clean.png",
+        src: "/images/products/polvo-de-hornear-actualizado.png",
         alt: "Polvo de Hornear",
         category: "Productos"
     },
     {
-        src: "/images/products/base-pan-integral-clean-v2.png",
+        src: "/images/products/base-para-pan-integral-actualizada.png",
         alt: "Base para Pan Integral",
         category: "Productos"
     },
     {
         src: "/images/team/_MG_9030.jpg",
         alt: "Equipo de Trabajo Adai",
-        category: "Equipo"
+        category: "Equipo",
+        lightboxCropBottom: 28
     },
     {
         src: "/images/team/_MG_9034.jpg",
@@ -85,7 +143,8 @@ const galleryImages: GalleryImage[] = [
     {
         src: "/images/team/_MG_9054.jpg",
         alt: "Reunión del Equipo",
-        category: "Equipo"
+        category: "Equipo",
+        lightboxCropBottom: 12
     },
     {
         src: "/images/team/_MG_9071.jpg",
@@ -106,16 +165,6 @@ const galleryImages: GalleryImage[] = [
         src: "/images/stock-reposteria-2.jpg",
         alt: "Torre de Macarons Gourmet",
         category: "Pastelería"
-    },
-    {
-        src: "/images/stock-panaderia-1.jpg",
-        alt: "Cesta de Pan Artesanal",
-        category: "Panadería"
-    },
-    {
-        src: "/images/stock-panaderia-2.jpg",
-        alt: "Croissants Recién Horneados",
-        category: "Panadería"
     },
     {
         src: "/images/hero3.jpg",
@@ -142,9 +191,9 @@ export default function GaleriaPage() {
                 <section
                     className="py-16 relative"
                     style={{
-                        backgroundImage: 'url(/images/bkimage2.png)',
+                        backgroundImage: 'url(/images/hero-galeria.png)',
                         backgroundRepeat: 'repeat',
-                        backgroundSize: '600px',
+                        backgroundSize: '467px',
                     }}
                 >
                     {/* Overlay for better text readability */}
@@ -260,14 +309,26 @@ export default function GaleriaPage() {
                             </svg>
                         </button>
                         <div
-                            className="relative max-w-4xl max-h-[80vh] w-full aspect-square animate-fade-in-scale"
+                            className={`relative w-full animate-fade-in-scale ${selectedImage.lightboxCropBottom
+                                ? "overflow-hidden"
+                                : "max-w-4xl max-h-[80vh] aspect-square"
+                                }`}
+                            style={selectedImage.lightboxCropBottom
+                                ? {
+                                    aspectRatio: `1365 / ${2048 * (1 - selectedImage.lightboxCropBottom / 100)}`,
+                                    maxWidth: `min(100%, ${(80 * 1365) / 2048}vh)`,
+                                    maxHeight: `${80 * (1 - selectedImage.lightboxCropBottom / 100)}vh`,
+                                }
+                                : undefined}
                             onClick={(e) => e.stopPropagation()}
                         >
                             <Image
                                 src={selectedImage.src}
                                 alt={selectedImage.alt}
                                 fill
-                                className="object-contain"
+                                className={selectedImage.lightboxCropBottom
+                                    ? "object-cover object-top"
+                                    : "object-contain"}
                             />
                         </div>
                         <div className="absolute bottom-8 left-0 right-0 text-center">
