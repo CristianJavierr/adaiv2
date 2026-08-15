@@ -128,7 +128,7 @@ const galleryImages: GalleryImage[] = [
         src: "/images/team/_MG_9030.jpg",
         alt: "Equipo de Trabajo Adai",
         category: "Equipo",
-        lightboxCropBottom: 28
+        lightboxCropBottom: 38
     },
     {
         src: "/images/team/_MG_9034.jpg",
