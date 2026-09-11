@@ -237,7 +237,7 @@ export default function QuienesSomos() {
                             ¿Desea saber más sobre Adai Soluciones?
                         </h2>
                         <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-                            Si desea conocer cómo podemos colaborarle, no dude en contactarnos.
+                            Contáctenos para conocer más sobre nuestros productos, servicios y cómo pueden apoyar a su empresa.
                         </p>
                         <Link
                             href="/contacto"

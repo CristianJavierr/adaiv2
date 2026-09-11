@@ -145,10 +145,10 @@ export default function Home() {
               <div className="relative mx-auto w-full max-w-md">
                 <div className="relative aspect-[4/5] overflow-hidden rounded-tl-[100px] rounded-br-[100px] bg-gray-50">
                   <Image
-                    src="/images/team/_MG_9071.jpg"
+                    src="/images/team/fotogrupo.jpg"
                     alt="Equipo Adai Soluciones"
                     fill
-                    className="object-cover object-center"
+                    className="object-cover object-top"
                   />
                 </div>
               </div>

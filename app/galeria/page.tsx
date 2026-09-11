@@ -125,19 +125,8 @@ const galleryImages: GalleryImage[] = [
         category: "Productos"
     },
     {
-        src: "/images/team/_MG_9030.jpg",
-        alt: "Equipo de Trabajo Adai",
-        category: "Equipo",
-        lightboxCropBottom: 38
-    },
-    {
         src: "/images/team/_MG_9034.jpg",
         alt: "Asesoría y Colaboración",
-        category: "Equipo"
-    },
-    {
-        src: "/images/team/_MG_9044.jpg",
-        alt: "Capacitación Técnica",
         category: "Equipo"
     },
     {
@@ -147,7 +136,7 @@ const galleryImages: GalleryImage[] = [
         lightboxCropBottom: 12
     },
     {
-        src: "/images/team/_MG_9071.jpg",
+        src: "/images/team/fotogrupo.jpg",
         alt: "Equipo Adai Soluciones",
         category: "Equipo"
     },
