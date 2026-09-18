@@ -89,7 +89,7 @@ export default function ConsultoriaPage() {
                                     src="/images/aboutus.jpeg"
                                     alt="Consultoría empresarial Adai Soluciones"
                                     fill
-                                    className="object-cover"
+                                    className="consultoria-hero-image object-cover object-top"
                                     priority
                                 />
                             </div>

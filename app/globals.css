@@ -169,6 +169,17 @@ body {
   transform: scale(1.05);
 }
 
+/* Consultoría: crop the lower tablecloth and nudge the image left. */
+.consultoria-hero-image {
+  object-position: center top;
+  transform: translateX(-2%) scale(1.15);
+  transform-origin: center top;
+}
+
+.image-zoom:hover .consultoria-hero-image {
+  transform: translateX(-2%) scale(1.19);
+}
+
 .gallery-reveal__mask {
   position: absolute;
   inset: 0;

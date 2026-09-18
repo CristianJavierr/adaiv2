@@ -141,8 +141,8 @@ const galleryImages: GalleryImage[] = [
         category: "Equipo"
     },
     {
-        src: "/images/team/_MG_9076.jpg",
-        alt: "Compartiendo en Equipo",
+        src: "/images/team/aylin-grullon-baez.png",
+        alt: "Aylin Grullón Báez",
         category: "Equipo"
     },
     {
